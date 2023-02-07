@@ -1,0 +1,18 @@
+@import '../../../stylesheets/variables';
+
+.work {
+    height: 661px;
+    background-color: #F4F6FC;
+    padding: 10.3125em;
+    display: flex;
+    justify-content: space-evenly;
+    color: $darkblue;
+}
+
+.panels {
+    display: grid;
+    grid-template-columns: auto auto;
+    div {
+        width: 18.9375em;
+    }
+}
