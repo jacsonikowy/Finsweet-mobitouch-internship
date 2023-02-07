@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
         <footer>
             <div className="footerEntry">
                 <div className="finsweet">
-                    <TextBlock headingText={'{Finsweet'} description={'We are always open to discuss your project and improve your online presence'} />
+                    <TextBlock headingText='{Finsweet' level='h3' description='We are always open to discuss your project and improve your online presence' />
                     <div className='box'>
                             <div>
                                 <p className='body2'>Email me at</p>
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className='letstalk'>
-                    <TextBlock headingText={"Lets Talk!"} description={'We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.'} />
+                    <TextBlock headingText="Lets Talk!" level='h2' description='We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.' />
                     </div>
             </div>
             <div className='footerEnd'>
