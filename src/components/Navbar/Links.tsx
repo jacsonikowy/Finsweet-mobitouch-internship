@@ -1,8 +1,9 @@
 import NavbarLink from "./NavbarLink"
+import './Navbar.scss'
 
 const Links: React.FC = () => {
     return (
-        <div>
+        <div >
             <NavbarLink subpage={'Home'}></NavbarLink>
             <NavbarLink subpage={'About us'}></NavbarLink>
             <NavbarLink subpage={'Features'}></NavbarLink>

@@ -1,9 +1,10 @@
-import Button from '../Button'
+import Button from '../Button/Button'
 import Links from './Links'
+import './Navbar.scss'
 
 const Navbar = () => {
     return (
-        <nav className='navbar'>
+        <nav>
             <div>
                 <h3>{'{Finsweet'}</h3>
             </div>
