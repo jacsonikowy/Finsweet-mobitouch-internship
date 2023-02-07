@@ -19,7 +19,7 @@ const TextBlock: React.FC<{ headingText: string; description: string}> = ({
     description,
 }) => (
     <div>
-            <TsHeading headingLevel="h1"></TsHeading>
+            <TsHeading headingLevel="h1">{headingText}</TsHeading>
             <p>{description}</p>
     </div>
 )

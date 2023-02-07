@@ -2,7 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './input.scss';
+import './stylesheets/_global.scss';
+import './stylesheets/_typography.scss'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
