@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+$a-tags: 'a, a:active, a:visited';
+$a-hover: 'a:active, a:hover';
+
+$font: 'Poppins', sans-serif;
+$primaryColor: white;
+
+// Colors
+$royal-blue: #2405F2;
+$dark-blue: #282938;
+$tintblue: #1C1E53;
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: $font;
+    color: $primaryColor;
+}
+
+#{$a-tags} {
+    text-decoration: none;
+    color: #BBBBCB;
+}
+
+#{$a-hover} {
+    color: white;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+h4, h5, h6 {
+    font-weight: 500;
+    font-style: normal;
+}
+
+.body1 {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+// ACTIVE
+.active {
+
+}
+
+
+// BUTTON
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.buttonDiv {
+    border: solid 2px #F4F6FC33;
+    border-radius: 41px;
+    padding: 1em;
+    width: 185px;
+    text-align: center;
+    margin-inline: 3em;
+}
+
+// LINKS
+
+.links {
+    color: white;
+}
+
+// NAVBAR ---------------------
+
+nav {
+    background: $tintblue;
+    height: 5.75em;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.navlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlink {
+    padding: 1em;
+    font-size: 16px;
+}
+
+// FOOTER
+footer {
+    height: 30.5em;
+}
+
+.footerEntry {
+    background-color: $tintblue;
+    height: 24.8125em;
+}
+
+.footerEnd {
+    background-color: white;
+    height: 5.75em;
+    display: flex;
+    justify-content: space-between;
+    color: black !important;
+}
