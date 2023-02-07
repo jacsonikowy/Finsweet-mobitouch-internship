@@ -5,7 +5,7 @@
     background-color: #F4F6FC;
     padding: 10.3125em;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     color: $darkblue;
 }
 
@@ -16,6 +16,7 @@
 .panels {
     display: grid;
     grid-template-columns: auto auto;
+    margin-right: 16em;
     div {
         width: 18.9375em;
     }
