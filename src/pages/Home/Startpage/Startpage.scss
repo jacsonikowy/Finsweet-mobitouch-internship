@@ -1,0 +1,13 @@
+@import '../../../stylesheets/variables';
+
+.startpage {
+    background-color: $tintblue;
+    color: $primaryColor;
+}
+
+.container {
+    padding: 160px;
+    span {
+        margin-top: 3em;
+    }
+}
