@@ -14,12 +14,13 @@ const TsHeading: React.FC<HeadingProps> = ({
 }
 
 
-const TextBlock: React.FC<{ headingText: string; description: string}> = ({
+const TextBlock: React.FC<{ headingText: string; description: string, level: any}> = ({
     headingText,
+    level,
     description,
 }) => (
     <div>
-            <TsHeading headingLevel="h1">{headingText}</TsHeading>
+            <TsHeading headingLevel={level}>{headingText}</TsHeading>
             <p>{description}</p>
     </div>
 )
