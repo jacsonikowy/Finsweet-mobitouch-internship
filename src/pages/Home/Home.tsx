@@ -4,12 +4,14 @@ import React from 'react';
 
 import './Home.scss'
 import Startpage from './Startpage/Startpage';
+import Work from './Work/Work';
 
 const Home: React.FC = () => {
     return (
         <>
             <Navbar />
             <Startpage />
+            <Work />
             <Footer />
         </>
     )
