@@ -5,6 +5,9 @@ import React from 'react';
 import './Home.scss'
 import Startpage from './Startpage/Startpage';
 import Work from './Work/Work';
+import Projects from './Projects/Projects';
+import Features from './Features/Features';
+import Reviews from './Reviews/Reviews';
 
 const Home: React.FC = () => {
     return (
@@ -12,6 +15,9 @@ const Home: React.FC = () => {
             <Navbar />
             <Startpage />
             <Work />
+            <Projects />
+            <Features />
+            <Reviews />
             <Footer />
         </>
     )
