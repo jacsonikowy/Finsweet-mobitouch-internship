@@ -1,10 +1,15 @@
 import React from 'react'
 
-const ButtonArrow: React.FC<{text: string}> = ({text}) => {
+import './ButtonArrow.scss'
+
+type buttonProps = {
+    text: string,
+    color?: string,
+}
+
+const ButtonArrow: React.FC<buttonProps> = ({text,color}) => {
     return (
-        <div>
-            <button>{text}</button>
-        </div>
+        <button style={{color: color}} className="buttonArrow">{text}→</button>
     )
 }
 
