@@ -1,0 +1,16 @@
+.stellar {
+    padding: 10em;
+
+    .backgroundImage {
+        background: rgba(28, 30, 83, 0.5);
+        display: flex;
+        justify-content: center;
+
+        .stellarStart {
+            position: absolute;
+            color: white;
+        }
+
+    }
+
+}
