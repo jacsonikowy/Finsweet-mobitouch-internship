@@ -1,13 +1,41 @@
 import React from 'react';
 
-import TextBlock from '../../../components/TextBlock';
+import TextBlock from '../../../components/TextBlock/TextBlock';
 import Panel from '../../../components/Panel/Panel';
 import './Work.scss'
+import '../../../stylesheets/_variables.scss'
 
-import Pointer1 from '../../../assets/pointer1.png'
-import Pointer2 from '../../../assets/pointer2.png'
-import Pointer3 from '../../../assets/pointer3.png'
-import Pointer4 from '../../../assets/pointer4.png'
+import Pointer1 from '../../../assets/icons/pointer1.png'
+import Pointer2 from '../../../assets/icons/pointer2.png'
+import Pointer3 from '../../../assets/icons/pointer3.png'
+import Pointer4 from '../../../assets/icons/pointer4.png'
+
+import ButtonArrow from '../../../components/ButtonArrow/ButtonArrow'
+
+const pointers = [
+    {
+        icon: Pointer1,
+        headingText: "Strategy"
+    },
+    {
+        icon: Pointer2,
+        headingText: "Wireframing"
+    },
+    {
+        icon: Pointer3,
+        headingText: "Design"
+    },
+    {
+        icon: Pointer4,
+        headingText: "Development"
+    }
+]
+
+const renderPointers = () => {
+    return pointers.map(pointer => {
+        return <Panel headingText={pointer.headingText} level='h5' description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .' icon={pointer.icon} />
+    })
+}
 
 
 const Work: React.FC = () => {
@@ -15,12 +43,10 @@ const Work: React.FC = () => {
         <div className='work'>
             <div className='howwework'>
                 <TextBlock headingText='How we work' level='h2' description='Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor.' />
+                <ButtonArrow text="Get in touch with us" color="#2405F2" />
             </div>
             <div className='panels'>
-                <Panel headingText='Strategy' level='h5' description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .' icon={Pointer1}/>
-                <Panel headingText='Wireframing' level='h5' description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .' icon={Pointer2}/>
-                <Panel headingText='Design' level='h5' description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .' icon={Pointer3} />
-                <Panel headingText='Development' level='h5' description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .' icon={Pointer4}/>
+                {renderPointers()}
             </div>
         </div>
     )
