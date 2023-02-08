@@ -1,0 +1,44 @@
+.review {
+    width: 70em;
+
+
+
+    .description {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 3em;
+
+        img {
+            border-radius: 100%;
+        }
+
+        .opinion {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1em;
+
+            span {
+                font-size: 1.2rem;
+            }
+
+            p {
+                font-size: 0.85rem;
+            }
+        }
+    }
+
+    .rectangles {
+        display: flex;
+        justify-content: flex-end;
+
+        .purpleRectangle {
+        }
+
+        span {
+            width: 4em;
+            height: 4em;
+            border-radius: 100%;
+        }
+
+    }
+}
