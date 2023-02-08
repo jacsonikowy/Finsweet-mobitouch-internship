@@ -1,19 +1,19 @@
 @import '../../stylesheets/variables';
 
 
-button {
+.button {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    color: $primaryColor;
-}
-
-.buttonDiv {
     border: solid 2px #F4F6FC33;
     border-radius: 41px;
     padding: 1em;
     width: 185px;
     text-align: center;
-    margin-inline: 3em;
     cursor: pointer;
+    
+    &:hover{
+        transition: opacity 1s ease-in-out;
+        opacity: 0.5;
+    }
 }
