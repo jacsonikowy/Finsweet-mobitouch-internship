@@ -3,10 +3,11 @@
 .startpage {
     background-color: $tintblue;
     color: $primaryColor;
-}
-
-.container {
-    padding: 160px;
+    padding: 10em;
+    .textblock {
+        display: flex;
+        justify-content: space-around;
+    }
     div {
         margin-top: 3em;
     }
