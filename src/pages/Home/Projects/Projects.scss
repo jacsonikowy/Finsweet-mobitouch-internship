@@ -3,4 +3,26 @@
 .projects {
     height: 100vh;
     padding: 10em;
+
+    .projectsGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+        padding: 4em 0 4em 0;
+        div {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .rectangle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 396px;
+        z-index: 10;
+        background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+    }
 }
+
