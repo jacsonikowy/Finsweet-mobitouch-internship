@@ -1,7 +1,6 @@
 @import 'variables';
 
 * {
-    padding: 0;
     margin: 0;
     font-family: 'Poppins';
 }
@@ -9,4 +8,10 @@
 @font-face {
     font-family: 'Poppins';
     src: url('../fonts/Poppins-Regular.ttf');
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
 }
