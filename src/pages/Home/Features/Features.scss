@@ -1,0 +1,22 @@
+@import '../../../stylesheets/variables';
+
+.features {
+    height: 90vh;
+    padding: 10em;
+}
+
+.panelsGrid {
+    margin-top: 3em;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.headings {
+    text-align: center;
+}
+
+.padding {
+    padding: 2em;
+    width: 25em;
+    height: 19.75em;
+}
