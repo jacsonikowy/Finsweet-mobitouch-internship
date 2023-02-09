@@ -3,15 +3,28 @@
 * {
     margin: 0;
     font-family: 'Poppins';
+    box-sizing: border-box;
 }
 
 @font-face {
     font-family: 'Poppins';
-    src: url('../fonts/Poppins-Regular.ttf');
+    src: url('../fonts/Poppins-Medium.ttf');
 }
 
 button {
     border: none;
     background: none;
     cursor: pointer;
+}
+
+.body2 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.75em;
+}
+
+.body1 {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75em;
 }
