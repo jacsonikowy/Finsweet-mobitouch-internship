@@ -1,6 +1,6 @@
 import React from 'react'
 import Links from "../Navbar/Links"
-import TextBlock from "../TextBlock"
+import TextBlock from "../TextBlock/TextBlock"
 import './Footer.scss'
 
 
