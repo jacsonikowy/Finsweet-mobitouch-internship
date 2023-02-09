@@ -3,7 +3,14 @@ import Question from '../../../components/Question/Question'
 
 import './FAQ.scss'
 
-const questions = [
+interface questionProps {
+    number: string,
+    question: string
+}
+
+type ArrayObject = Array<questionProps>;
+
+const questions: ArrayObject = [
     {
         number: '01',
         question: 'How much time does it take?',
@@ -27,7 +34,7 @@ const questions = [
 ]
 
 const renderQuestions = () => {
-    return questions.map(question => {
+    return questions.map((question: questionProps) => {
         return <Question number={question.number} question={question.question} answer='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' />
     })
 }
@@ -37,7 +44,7 @@ const FAQ: React.FC = () => {
         <div className='FAQ'>
             <div>
                 <h3>Frequently Asked Questions</h3>
-                <a href="">Contact us for more info</a>
+                <a href="#index">Contact us for more info</a>
             </div>
             <div className='questions'> 
                 {renderQuestions()}
