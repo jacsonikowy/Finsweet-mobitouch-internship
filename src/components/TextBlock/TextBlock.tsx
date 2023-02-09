@@ -7,14 +7,14 @@ import './TextBlock.scss'
 
 type variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
 
-export type textblockProps = {
+export interface TextblockProps {
     headingText: string,
     description: string,
     level: variant,
     className?: string,
 }
 
-const TextBlock: React.FC<textblockProps> = ({
+const TextBlock: React.FC<TextblockProps> = ({
     level,
     headingText,
     description,
