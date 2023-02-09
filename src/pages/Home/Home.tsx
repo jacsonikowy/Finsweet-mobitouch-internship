@@ -8,6 +8,9 @@ import Work from './Work/Work';
 import Projects from './Projects/Projects';
 import Features from './Features/Features';
 import Reviews from './Reviews/Reviews';
+import FAQ from './FAQ/FAQ';
+import StellarForm from './StellarForm/StellarForm';
+import Blog from './Blog/Blog'
 
 const Home: React.FC = () => {
     return (
@@ -18,6 +21,9 @@ const Home: React.FC = () => {
             <Projects />
             <Features />
             <Reviews />
+            <FAQ />
+            <StellarForm />
+            <Blog />
             <Footer />
         </>
     )
