@@ -11,4 +11,9 @@
     div {
         margin-top: 3em;
     }
+    .buttons {
+        display: flex;
+        justify-content: space-around;
+        width: 25%;
+    }
 }
