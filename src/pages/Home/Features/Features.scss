@@ -2,7 +2,8 @@
 
 .features {
     height: 90vh;
-    padding: 10em;
+    padding: 7em;
+    margin-top: 7em;
 }
 
 .panelsGrid {
@@ -19,4 +20,18 @@
     padding: 2em;
     width: 25em;
     height: 19.75em;
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .features {
+        padding: 2em;
+    }
+
+    .panelsGrid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
 }
