@@ -61,7 +61,7 @@
     }
 }
 
-@media (min-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
 
     .projects {
         padding: 3em;
