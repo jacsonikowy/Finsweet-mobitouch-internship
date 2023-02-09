@@ -1,16 +1,81 @@
-.stellar {
-    padding: 10em;
+@import '../../../stylesheets/variables';
 
-    .backgroundImage {
-        background: rgba(28, 30, 83, 0.5);
-        display: flex;
-        justify-content: center;
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 68%;
+    height: 691px;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+}
 
-        .stellarStart {
-            position: absolute;
-            color: white;
-        }
-
+form {
+    position: absolute;
+    top: 15em;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    * {
+        position: relative;
     }
+}
 
+.grid-item {
+    position: relative;
+    height: 200px;
+}
+
+input {
+    border: none;
+    background: none;
+    padding: 1em;
+    border: 1.5px solid #FFFFFF0D;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    color: white;
+}
+
+.background {
+    background: #1C1E5380;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 1280px;
+    height: 692px;
+    z-index: 10;
+}
+
+.background-1 {
+    background: url('../../../assets/images/womanwritingonpaper.png') no-repeat;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 691px;
+}
+
+.background-2 {
+    background-color: $tintblue;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    height: 691px;
+}
+
+.text {
+    position: absolute;
+    padding: 1em;
+    z-index: 20;
+}
+
+.submitBtn {
+    margin-top: 3em;
 }
