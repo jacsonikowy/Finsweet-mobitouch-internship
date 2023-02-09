@@ -23,7 +23,7 @@
     }
 }
 
-@media (min-width: $breakpoint-tablet) {
+@media (max-width: $breakpoint-tablet) {
     .work {
         padding: 3em;
     }
