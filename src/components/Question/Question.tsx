@@ -27,9 +27,9 @@ const Question: React.FC<QuestionProps> = ({number,question,answer, ...props}) =
             <div className='answer'>
                 <h6 className='number'>{number}</h6>
                 <h6>{question}</h6>
-                <p>{active ? answer : null }</p>
+                <p className={`show ${active ? "active" : ""}`}>{answer}</p>
             </div>
-            <img src={Plus} alt="" onClick={() => showAnswer()}/>
+            <img className={`${active ? "activeImg" : ""}`} src={Plus} alt="" onClick={() => showAnswer()}/>
         </div>
     )
 }
