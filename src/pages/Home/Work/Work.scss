@@ -16,8 +16,15 @@
 .panels {
     display: grid;
     grid-template-columns: auto auto;
-    margin-right: 16em;
+    min-width: 5em;
     div {
         width: 18.9375em;
+        padding: 1em;
+    }
+}
+
+@media (min-width: $breakpoint-tablet) {
+    .work {
+        padding: 3em;
     }
 }

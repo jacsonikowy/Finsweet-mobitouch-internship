@@ -33,7 +33,7 @@ const pointers = [
 
 const renderPointers = () => {
     return pointers.map(pointer => {
-        return <Panel headingText={pointer.headingText} level='h5' description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .' icon={pointer.icon} />
+        return <Panel className='panel' headingText={pointer.headingText} level='h5' description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .' icon={pointer.icon} />
     })
 }
 
