@@ -3,26 +3,71 @@
 .projects {
     height: 100vh;
     padding: 10em;
-
-    .projectsGrid {
+    h1 {
+        margin-bottom: 1em;
+    }
+    .grid1 {
+        color: white;
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 2em;
-        padding: 4em 0 4em 0;
-        div {
-            position: relative;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 15em;
+        .flex-items {
+            display: flex;
+            flex-direction: column;
+            .flex-item {
+                position: relative;
+                .unisaas {
+                    z-index: 10;
+                    padding: 2em;
+                    bottom: 0;
+                    position: absolute;
+                    width: 100%;
+                }
+                .rectangle-1 {
+                    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 10;
+                    width: 100%;
+                }
+            }
+        }
+        .grid-item1 {
             width: 100%;
             height: 100%;
+            position: relative;
+            .rectangle {
+                background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 10;
+                width: 24.75em;
+            }
+            .workhub {
+                z-index: 10;
+                padding: 2em;
+                bottom: 0;
+                position: absolute;
+                width: 40%;
+            }
         }
-    }
-
-    .rectangle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 396px;
-        z-index: 10;
-        background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
     }
 }
 
+@media (min-width: $breakpoint-tablet) {
+
+    .projects {
+        padding: 3em;
+    }
+
+    .grid1 {
+        display: block;
+    }
+}
