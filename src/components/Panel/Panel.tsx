@@ -1,14 +1,14 @@
 import React from 'react'
 
 import TextBlock from '../../components/TextBlock/TextBlock';
-import { textblockProps } from '../../components/TextBlock/TextBlock';
+import { TextblockProps } from '../../components/TextBlock/TextBlock';
 
-interface panelProps extends textblockProps{
+interface PanelProps extends TextblockProps{
     icon: string,
     className?: string,
 }
 
-const Panel: React.FC<panelProps> = ({headingText, level, description, icon, className}) => {
+const Panel: React.FC<PanelProps> = ({headingText, level, description, icon, className}) => {
     return (
         <div className={className}>
             <img src={icon} alt="pointer 1" />
