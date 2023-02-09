@@ -7,9 +7,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     textColor: string,
 }
 
-const Button: React.FC<ButtonProps> = ({text, background, textColor, ...props}) => {
+const Button: React.FC<ButtonProps> = ({text, background, textColor, className}) => {
     return (
-        <button style={{backgroundColor: background}} className='button'>{text}</button> 
+        <button style={{backgroundColor: background}} className={`button ${className}`}>{text}</button> 
         
     )
 }
