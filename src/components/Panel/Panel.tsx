@@ -3,7 +3,7 @@ import React from 'react'
 import TextBlock from '../../components/TextBlock/TextBlock';
 import { TextblockProps } from '../../components/TextBlock/TextBlock';
 
-interface PanelProps extends TextblockProps{
+export interface PanelProps extends TextblockProps{
     icon: string,
     className?: string,
 }
