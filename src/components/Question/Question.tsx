@@ -14,7 +14,7 @@ interface QuestionProps extends React.HTMLAttributes<HTMLButtonElement> {
 
 const Question: React.FC<QuestionProps> = ({number,question,answer, ...props}) => {
 
-    const [active, setActive] = React.useState<boolean>(false);
+    const [active, setActive] = React.useState(false);
 
     const showAnswer = () => {
         setActive(!active)
