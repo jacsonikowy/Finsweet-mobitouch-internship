@@ -1,0 +1,8 @@
+@import '../../../src/stylesheets/variables';
+
+@media screen and (max-width: $extralarge) {
+    .aboutus {
+        display: block;
+        margin: auto 0;
+    }
+}

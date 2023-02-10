@@ -1,0 +1,25 @@
+@import '../../../stylesheets/variables';
+
+.ourDesign {
+    display: flex;
+    justify-content: space-around;
+    padding: 7em;
+    .textblockDesign {
+        max-width: 520px;
+        margin:0 auto;
+    }
+    img {
+        padding: 2em 0;
+    }
+}
+
+@media screen and (max-width: $extralarge) {
+    .ourDesign {
+        padding: 2em;
+        display: block;
+        margin: 0 auto;
+        .aboutUsDiv {
+            text-align: center;
+        }
+    }
+}

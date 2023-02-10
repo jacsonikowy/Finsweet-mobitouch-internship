@@ -1,0 +1,38 @@
+@import '../../../stylesheets/variables';
+
+.whoweare {
+    padding: 10em;
+    margin: 0 auto;
+    .whoweare-background {
+        background: #F4F5F5;
+        padding: 5em;
+    }
+    .whoweare-text {
+        display: flex;
+        justify-content: space-between;
+        .whoweare-textblock {
+            max-width: 515px;
+        padding: 1em;
+        }
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: $extralarge) {
+    .whoweare {
+        padding: 2em;
+        .whoweare-background {
+            padding: 0;
+        }
+        .whoweare-text {
+            display: block;
+            margin: 0 auto;
+            .whoweare-textblock {
+                padding: 2em 0;
+            }
+        }
+    }
+}

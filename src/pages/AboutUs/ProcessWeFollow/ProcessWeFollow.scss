@@ -1,0 +1,31 @@
+@import '../../../stylesheets/variables';
+
+.processwefollow {
+    padding: 7em;
+    h2 {
+        text-align: center;
+        margin: 0 0 2em 0;
+    }
+    .processwefollow-panels {
+        display: flex;
+        justify-content: space-evenly;
+        .processwefollow-panel {
+            max-width: 272px;
+            padding: 1em;
+        }
+    }
+}
+
+@media screen and (max-width: $large) {
+    .processwefollow {
+        .processwefollow-panels {
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: $small) {
+    .processwefollow {
+        padding: 2em;
+    }
+}
