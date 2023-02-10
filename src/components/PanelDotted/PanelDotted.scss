@@ -1,0 +1,15 @@
+.paneldotted {
+    position: relative;
+
+}
+
+.paneldotted::after {
+    position: absolute;
+    top: 0.7em;
+    left: 40px;
+    right: 20%;
+    bottom: 0;
+    z-index: -1;
+    border-top: 1px dotted black;
+    content: '';
+}
