@@ -5,7 +5,7 @@
     grid-template-columns: 1fr 1fr;
     width: 68%;
     height: 691px;
-    margin: 0 auto;
+    margin: 5em auto;
     color: white;
     position: relative;
 }
@@ -45,7 +45,7 @@ input {
     top: 0;
     right: 0;
     bottom: 0;
-    width: 1280px;
+    max-width: 1280px;
     height: 692px;
     z-index: 10;
 }
@@ -78,4 +78,10 @@ input {
 
 .submitBtn {
     margin-top: 3em;
+}
+
+@media screen and (max-width: $extralarge) {
+    .grid {
+        display: block;
+    }
 }

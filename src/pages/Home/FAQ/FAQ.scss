@@ -2,11 +2,18 @@
 
 .FAQ {
     padding: 10em;
-    height: 100vh;
     display: flex;
     justify-content: space-between;
+    max-height: 100vh;
 }
 
 a {
     color: #2405F2;
+}
+
+@media screen and (max-width: $medium){
+    .FAQ {
+        display: block;
+        padding: 2em;
+    }
 }

@@ -3,14 +3,14 @@
 .work {
     height: 661px;
     background-color: #F4F6FC;
-    padding: 10.3125em;
     display: flex;
+    padding: 10.3125em;
     justify-content: space-between;
     color: $darkblue;
 }
 
 .howwework {
-    width: 405px;
+    min-width: 405px;
 }
 
 .panels {
@@ -23,8 +23,18 @@
     }
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media screen and (max-width: 1280px) {
     .work {
-        padding: 3em;
+        display: block;
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .work {
+        display: block;
+        .panels {
+            display: block;
+        }
     }
 }

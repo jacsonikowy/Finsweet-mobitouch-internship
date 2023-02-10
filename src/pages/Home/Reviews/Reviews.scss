@@ -1,13 +1,27 @@
+@import '../../../stylesheets/variables';
+
 .reviews {
+    display: block;
     padding: 7em;
-    margin-top: 30em;
     .textblockOpinion {
-        width: 507px;
+        max-width: 507px;
     }
     .reviewBlock {
         display: flex;
         justify-content: space-between;
-        height: 90vh;
-        width: 100%;
+        min-height: 90vh;
+    }
+}
+
+@media screen and (max-width: $large) {
+    .reviews {
+        padding: 3em;
+        margin: 2em 0;
+        .reviewBlock {
+            display: block;
+            .review {
+                max-width: 50em;
+            }
+        }
     }
 }

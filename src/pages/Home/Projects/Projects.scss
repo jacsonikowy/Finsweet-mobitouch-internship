@@ -1,8 +1,8 @@
 @import '../../../stylesheets/variables';
 
 .projects {
-    height: 100vh;
     padding: 10em;
+    max-height: 150vh;
     h1 {
         margin-bottom: 1em;
     }
@@ -61,7 +61,7 @@
     }
 }
 
-@media (max-width: $breakpoint-tablet) {
+@media screen and (max-width: $medium) {
 
     .projects {
         padding: 3em;

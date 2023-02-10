@@ -7,6 +7,9 @@
     .textblock {
         display: flex;
         justify-content: space-around;
+        img {
+            min-width: 648px;
+        }
     }
     div {
         margin-top: 3em;
@@ -15,5 +18,20 @@
         display: flex;
         justify-content: space-around;
         width: 25%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .startpage {
+        padding: 2em;
+        .textblock {
+            display: block;
+            padding: 2em 0;
+            img {
+                margin: 2em auto;
+                max-width: 100%;
+                height: auto;
+            }
+        }
     }
 }

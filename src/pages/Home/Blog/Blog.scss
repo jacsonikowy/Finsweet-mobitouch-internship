@@ -1,14 +1,24 @@
+@import '../.../../../../stylesheets/variables';
+
 .ourblog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 7em;
-    width: 100%;
     h1 {
         margin-bottom: 0.5em;
     }
     .blogposts {
         display: flex;
         justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: $extralarge) {
+    .ourblog {
+        padding: 2em;
+        .blogposts {
+            display: block;
+            .blogpost {
+                margin: 0 auto;
+            }
+        }
     }
 }
