@@ -1,65 +1,98 @@
-@import '../../stylesheets/variables';
+@import "../../stylesheets/variables";
 
 footer {
-    height: 30.5em;
-    color: $primaryColor;
+  height: 30.5em;
+  color: $primaryColor;
 }
 
 .footerEntry {
-    background-color: $tintblue;
-    height: 24.8125em;
-    display: flex;
-    padding-left: 160px;
-    padding-top: 104px;
-    span {
-        color: white;
-    }
-    
+  background-color: $tintblue;
+  min-height: 24.8125em;
+  display: flex;
+  justify-content: space-between;
+  padding: 5em 5em 0 5em;
+  span {
+    color: white;
+  }
 }
 
 .footerEnd {
-    background-color: white;
-    height: 5.75em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  background-color: white;
+  height: 5.75em;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  color: #282938;
+  a {
     color: #282938;
-    a {
-        color: #282938;
-    }
+  }
 }
 
 .finsweet {
-    height: 100%;
-    width: 517px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+  width: 517px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
 
 .box {
-    background-color: $yellow;
-    color: $darkblue;
-    height: 95px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  background-color: $yellow;
+  color: $darkblue;
+  min-height: 95px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .body1 {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .body2 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .letstalk {
-    width: 399px;
-    margin-left: 260px;
+  width: 399px;
 }
 
 .opacity {
-    opacity: 0.8;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: $large) {
+  footer {
+    .footerEntry {
+      display: flex;
+      flex-direction: column;
+      padding: 5em;
+      .box {
+        flex-direction: column;
+        padding: 40px;
+        text-align: center;
+        .box-title {
+          font-size: 18px;
+          font-weight: 500;
+        }
+      }
+    }
+    .footerEnd {
+      display: block;
+      .footerEnd-links {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        * {
+          padding: 20px;
+        }
+      }
+      p {
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  }
 }
