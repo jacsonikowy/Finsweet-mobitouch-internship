@@ -8,18 +8,26 @@
     margin: 5em auto;
     color: white;
     position: relative;
-}
-
-form {
-    position: absolute;
-    top: 15em;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    z-index: 20;
-    * {
-        position: relative;
+    .grid-form {
+        position: absolute;
+        top: 15em;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        z-index: 20;
+        * {
+            position: relative;
+        }
+    }
+    input {
+        border: none;
+        background: none;
+        padding: 1em;
+        border: 1.5px solid #FFFFFF0D;
+        border-radius: 0.5em;
+        margin-top: 1em;
+        color: white;
     }
 }
 
@@ -28,15 +36,6 @@ form {
     height: 200px;
 }
 
-input {
-    border: none;
-    background: none;
-    padding: 1em;
-    border: 1.5px solid #FFFFFF0D;
-    border-radius: 0.5em;
-    margin-top: 1em;
-    color: white;
-}
 
 .background {
     background: #1C1E5380;

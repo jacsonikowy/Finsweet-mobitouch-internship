@@ -14,7 +14,7 @@ const Startpage: React.FC = () => {
                 <img src={Illustration} alt="" />
             </div>
             <div className='buttons'>
-                <Button text='View our work' background='#FCD980' textColor='#1B1C2B' />
+                <Button text='View our work' background="yellow" textColor="black" />
                 <ButtonArrow text="View Pricing" color="white" />
             </div>
         </div>
