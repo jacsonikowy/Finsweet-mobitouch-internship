@@ -1,0 +1,46 @@
+@import '../../../stylesheets/variables';
+
+.contactus-formdiv {
+    padding: 7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contactus-formdiv-textblock {
+        text-align: center;
+    }
+    .contactus-form {
+        display: grid;
+        place-content: center;
+        grid-template-columns: 50% 50%;
+        margin: 64px 0;
+        font-size: 18px;
+        max-width: 1061px;
+        p {
+            display: flex;
+            flex-direction: column;
+            margin: 0 6px 24px 0;
+            
+            input {
+                max-width: 438px;
+                max-height: 64px;
+                padding: 18px;
+                color: '#000000';
+                border: 1px solid rgba(0, 0, 0, 0.12);
+                border-radius: 18px;
+            }
+
+            textarea {
+                width: 100%;
+                @extend input
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $large) {
+    .contactus-formdiv {
+        .contactus-form {
+            display: block;
+        }
+    }
+}
