@@ -10,7 +10,7 @@ const getLinks: Iformat = (subpage: string) => {
     if(subpage.toLowerCase() === "home") {
         return '/'
     }
-    return subpage.toLowerCase().split(" ").join("")
+    return '/' + subpage.toLowerCase().split(" ").join("")
 } 
 
 const NavbarLink = ({subpage}: {subpage: string}) => {

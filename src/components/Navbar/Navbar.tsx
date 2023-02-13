@@ -8,7 +8,7 @@ const Navbar = () => {
             <h6>{'{Finsweet'}</h6>
             <div className='navlinks'>
                 <Links />
-                <Button text="Contact Us" background='#1C1E53' textColor='white' />
+                <Button text="Contact Us" background="darkblue" textColor='white' />
             </div>
         </nav>
     )
