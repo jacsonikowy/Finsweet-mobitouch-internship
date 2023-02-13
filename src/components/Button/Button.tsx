@@ -3,13 +3,13 @@ import './Button.scss'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     text: string,
-    background: string,
-    textColor: string,
+    background: 'darkblue' | "yellow",
+    textColor: 'white' | 'black',
 }
 
-const Button: React.FC<ButtonProps> = ({text, background, textColor, className}) => {
+const Button: React.FC<ButtonProps> = ({text, background, textColor, ...props}) => {
     return (
-        <button style={{backgroundColor: background}} className={`button ${className}`}>{text}</button> 
+        <button className={`button ${textColor} ${background}`} {...props}>{text}</button> 
         
     )
 }
