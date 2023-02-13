@@ -9,6 +9,8 @@ import OurDesign from './OurDesign/OurDesign'
 import WhoWeAre from './WhoWeAre/WhoWeAre'
 import ProcessWeFollow from './ProcessWeFollow/ProcessWeFollow'
 import Mission from './Mission/Mission'
+import Benefits from './Benefits/Benefits'
+import MeetTeam from './MeetTeam/MeetTeam'
 
 
 const AboutUs: React.FC = () => {
@@ -19,6 +21,8 @@ const AboutUs: React.FC = () => {
             <WhoWeAre />
             <ProcessWeFollow />
             <Mission />
+            <Benefits />
+            <MeetTeam />
             <Footer />
         </div>
     )

@@ -1,0 +1,40 @@
+@import '../../../stylesheets/variables';
+
+.benefits {
+    padding: 7em;
+    h2 {
+        text-align: center;
+    }
+    .benefits-panels {
+        display: flex;
+        justify-content: space-around;
+        margin: 128px 0;
+        .benefits-panels-panel {
+            padding: 32px;
+        }
+    }
+    .benefits-icons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: $large) {
+    .benefits {
+        padding: 2em;
+        .benefits-panels {
+            padding: 32px;
+            flex-direction: column;
+        }
+        .benefits-icons {
+            flex-direction: column;
+            img {
+                padding: 16px;
+            }
+            .benefits-icons-textblock {
+                padding: 16px;
+            }
+        }
+    }
+}

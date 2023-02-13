@@ -1,0 +1,21 @@
+@import '../../../stylesheets/variables';
+
+.meetteam {
+    padding: 7em;
+    text-align: center;
+    .meetteam-teammembers {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 96px 0;
+    }
+}
+
+@media screen and (max-width: $large){
+    .meetteam {
+        padding: 2em;
+        .meetteam-teammembers {
+            flex-direction: column;
+            
+        }
+    }
+}
