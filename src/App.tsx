@@ -1,6 +1,8 @@
 import Home from './pages/Home/Home'
 import AboutUs from './pages/AboutUs/AboutUs'
 import ErrorPage from './pages/ErrorPage/ErrorPage'
+import Pricing from './pages/Pricing/Pricing'
+import ContactUs from './pages/ContactUs/ContactUs'
 
 import {
   createBrowserRouter,
@@ -15,10 +17,15 @@ const router = createBrowserRouter([
   },
   {
     path: '/aboutus',
-    element: <AboutUs />
+    element: <AboutUs />,
   },
   {
-
+    path: '/pricing',
+    element: <Pricing />,
+  },
+  {
+    path: '/contactus',
+    element: <ContactUs />
   }
 ])
 
