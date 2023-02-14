@@ -3,7 +3,7 @@
 .startpage {
     background-color: $tintblue;
     color: $primaryColor;
-    padding: 10em;
+    padding: 126px 160px 128px 160px;
     .textblock {
         display: flex;
         justify-content: space-around;
@@ -15,9 +15,10 @@
         margin-top: 3em;
     }
     .buttons {
-        display: flex;
-        justify-content: space-around;
-        width: 25%;
+        padding: 48px 0 0 0;
+        .buttons-button {
+            margin-right: 40px; 
+        }
     }
 }
 

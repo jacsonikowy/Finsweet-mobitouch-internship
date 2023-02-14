@@ -30,7 +30,7 @@ const Form: React.FC = () => {
                     <textarea></textarea>
                 </p>
             </form>
-            <Button type='submit' text="Send Message" background="darkblue" textColor="white" />
+            <Button type='submit' text="Send Message" variant='secondary'/>
         </div>
     )
 }

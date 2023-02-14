@@ -1,19 +1,21 @@
 @import '../../../stylesheets/variables';
 
 .FAQ {
-    padding: 7em;
+    padding: 128px 162px 0 152px;
     display: flex;
     justify-content: space-between;
-    min-height: 100vh;
+    .FAQ-title {
+        padding: 0 136px 32px 0;
+    }
 }
 
 a {
     color: #2405F2;
 }
 
-@media screen and (max-width: $medium){
+@media screen and (max-width: $extralarge){
     .FAQ {
         display: block;
-        padding: 2em;
+        padding: 16px;
     }
 }

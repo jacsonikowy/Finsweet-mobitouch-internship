@@ -1,21 +1,21 @@
 @import '../../../stylesheets/variables';
 
 .work {
-    height: 661px;
+    min-height: 661px;
     background-color: #F4F6FC;
     display: flex;
-    padding: 10.3125em;
-    justify-content: space-between;
+    padding: 128px 0 128px 165px;
     color: $darkblue;
 }
 
 .howwework {
-    min-width: 405px;
+    max-width: 405px;
 }
 
 .panels {
     display: grid;
     grid-template-columns: auto auto;
+    margin: 0 0 0 142px;
     min-width: 5em;
     div {
         width: 18.9375em;
@@ -26,7 +26,11 @@
 @media screen and (max-width: 1280px) {
     .work {
         display: block;
-        padding: 2em;
+        padding: 16px;
+        .panels {
+            padding: 32px 0 0 0;
+            margin: 0 0 0 0;
+        }
     }
 }
 

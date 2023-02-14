@@ -1,13 +1,15 @@
 @import '../../../stylesheets/variables';
 
+.stellarForm {
+    padding: 128px 162px 128px 158px;
+}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 68%;
-    height: 691px;
+    position: relative;
     margin: 5em auto;
     color: white;
-    position: relative;
     .grid-form {
         position: absolute;
         top: 15em;
@@ -54,8 +56,6 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 0;
-    bottom: 0;
     height: 691px;
 }
 
@@ -68,7 +68,6 @@
     position: absolute;
     height: 691px;
 }
-
 .text {
     position: absolute;
     padding: 1em;

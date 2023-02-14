@@ -2,25 +2,27 @@
 
 .reviews {
     display: block;
-    padding: 7em;
-    .textblockOpinion {
-        max-width: 507px;
-    }
+    padding: 130px 160px;
     .reviewBlock {
         display: flex;
         justify-content: space-between;
-        min-height: 90vh;
+        .textblockOpinion {
+            max-width: 327px;
+            margin: 0 110px 0 0;
+        }
+        .reviewBlock-opinion {
+            padding: 0;
+        }
     }
 }
 
-@media screen and (max-width: $large) {
+@media screen and (max-width: $extralarge) {
     .reviews {
-        padding: 3em;
-        margin: 2em 0;
+        padding: 16px;
         .reviewBlock {
             display: block;
-            .review {
-                max-width: 50em;
+            .reviewBlock-opinion {
+                padding: 48px 16px 32px 16px;
             }
         }
     }

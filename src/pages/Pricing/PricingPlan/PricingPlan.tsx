@@ -83,8 +83,7 @@ const ExamplePricingCard: PricingCardProps = {
     productDescription: 'When you’re ready to go beyond prototyping in Figma',
     ArrayOfLinks: ArrayLinks,
     buttonName: 'Get Started',
-    buttonBackgroundColor: "darkblue",
-    buttonTextColor: "white"
+    buttonVariant: "secondary"
 }
 
 const SecondPricingCard: PricingCardProps = {
@@ -96,8 +95,7 @@ const SecondPricingCard: PricingCardProps = {
     productDescription: 'When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.',
     ArrayOfLinks: SecondArrayLinks,
     buttonName: 'Get Started',
-    buttonBackgroundColor: 'yellow',
-    buttonTextColor: "black"
+    buttonVariant: 'primary'
 }
 
 const ThirdPricingCard: PricingCardProps = {
@@ -108,8 +106,7 @@ const ThirdPricingCard: PricingCardProps = {
     productDescription: 'When you’re ready to go beyond prototyping in Figma',
     ArrayOfLinks: ThirdArrayLinks,
     buttonName: 'Contact Us',
-    buttonBackgroundColor: "darkblue",
-    buttonTextColor: "white"
+    buttonVariant: "secondary"
 }
 
 
@@ -127,7 +124,8 @@ const PricingPlan: React.FC = () => {
             <div className="pricingplan-cards">
                 {
                     pricingCards.map(pricingCard => {
-                        return <PricingCard price={pricingCard.price} content={pricingCard.content} backgroundColor={pricingCard.backgroundColor} textColor={pricingCard.textColor} productName={pricingCard.productName} productDescription={pricingCard.productDescription} ArrayOfLinks={pricingCard.ArrayOfLinks} buttonName={pricingCard.buttonName} buttonBackgroundColor={pricingCard.buttonBackgroundColor} buttonTextColor={pricingCard.buttonTextColor} />
+                        return <PricingCard price={pricingCard.price} content={pricingCard.content} backgroundColor={pricingCard.backgroundColor} textColor={pricingCard.textColor} productName={pricingCard.productName} productDescription={pricingCard.productDescription} ArrayOfLinks={pricingCard.ArrayOfLinks} buttonName={pricingCard.buttonName} buttonVariant={pricingCard.buttonVariant
+                        } />
                     })
                 }
             </div>

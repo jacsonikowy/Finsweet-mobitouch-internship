@@ -3,37 +3,36 @@ import React from 'react';
 import Panel from '../../../components/Panel/Panel'
 
 import './Features.scss'
-
-import Icon1 from '../../../assets/icons/Icon.svg'
-import Icon2 from '../../../assets/icons/Icon(1).svg'
-import Icon3 from '../../../assets/icons/Icon(2).svg'
-import Icon4 from '../../../assets/icons/Icon(3).svg'
-import Icon5 from '../../../assets/icons/Icon(4).svg'
-import Icon6 from '../../../assets/icons/Icon(5).svg'
+import { ReactComponent as MyIcon } from'../../../assets/icons/Icon.svg'  
+import { ReactComponent as MyIcon2 } from'../../../assets/icons/Icon(1).svg'  
+import { ReactComponent as MyIcon3 } from'../../../assets/icons/Icon(2).svg'  
+import { ReactComponent as MyIcon4 } from'../../../assets/icons/Icon(3).svg'  
+import { ReactComponent as MyIcon5 } from'../../../assets/icons/Icon(4).svg'  
+import { ReactComponent as MyIcon6 } from'../../../assets/icons/Icon(5).svg'  
 
 const Panels = [
     {
-        icon: Icon1,
+        icon: <MyIcon />,
         headingText: "Uses Client First",
     },
     {
-        icon: Icon2,
+        icon: <MyIcon2 />,
         headingText: "Two Free Revision Round",
     },
     {
-        icon: Icon3,
+        icon: <MyIcon3 />,
         headingText: "Template Customization",
     },
     {
-        icon: Icon4,
+        icon: <MyIcon4 />,
         headingText: "24/7 Support",
     },
     {
-        icon: Icon5,
+        icon: <MyIcon5 />,
         headingText: "Quick Delivery",
     },
     {
-        icon: Icon6,
+        icon: <MyIcon6 />,
         headingText: "Hands-on approach",
     }
 ]
@@ -41,7 +40,7 @@ const Panels = [
 
 const renderPanels = () => {
     return Panels.map(panel => {
-        return <Panel className="padding" icon={panel.icon} level='h5' headingText={panel.headingText} description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ' />
+        return <Panel className="padding" icon={panel.icon} level='h6' headingText={panel.headingText} description='Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ' />
     }) 
 }
 
@@ -49,7 +48,7 @@ const Features:React.FC = () => {
     return (
         <div className='features'>
             <div className='headings'>
-                <h5>Features</h5>
+                <p className='body2'>Features</p>
                 <h1>Design that solves problems, one product at a time</h1>
             </div>
             <div className='panelsGrid'>

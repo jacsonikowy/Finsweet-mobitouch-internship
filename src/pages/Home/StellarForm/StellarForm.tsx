@@ -21,21 +21,23 @@ const StellarForm: React.FC = () => {
     */
 
     return (
-        <div className='grid'>
-            <div className='background'></div>
-            <div className='grid-item'>
-                <div className="background-1"></div>
-                <TextBlock className="text" level='h1' headingText='Building stellar websites for early startups' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.' />
-            </div>
-            <div className='grid-item'>
-                <div className='background-2'></div>
-                <TextBlock className='text' level='h5' headingText='Send inquiry' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.' />
-                <form className="grid-form" action="">
-                    <input className="body1" type="text" placeholder='Your Name'/>
-                    <input className="body1" type="text" placeholder='Email'/>
-                    <input className="body1" type="text" placeholder='Paste your Figma design URL'/>
-                    <Button className="submitBtn" text="Submit an Inquiry" background="yellow" textColor='black' />
-                </form>
+        <div className='stellarForm'>
+            <div className="grid">
+                <div className='background'></div>
+                <div className='grid-item'>
+                    <div className="background-1"></div>
+                    <TextBlock className="text" level='h1' headingText='Building stellar websites for early startups' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.' />
+                </div>
+                <div className='grid-item'>
+                    <div className='background-2'></div>
+                    <TextBlock className='text' level='h5' headingText='Send inquiry' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.' />
+                    <form className="grid-form" action="">
+                        <input className="body1" type="text" placeholder='Your Name'/>
+                        <input className="body1" type="text" placeholder='Email'/>
+                        <input className="body1" type="text" placeholder='Paste your Figma design URL'/>
+                        <Button className="submitBtn" text="Submit an Inquiry" variant="primary" />
+                    </form>
+                </div>
             </div>
         </div>
     )

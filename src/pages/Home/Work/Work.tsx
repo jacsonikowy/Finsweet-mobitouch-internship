@@ -5,28 +5,28 @@ import Panel from '../../../components/Panel/Panel';
 import './Work.scss'
 import '../../../stylesheets/_variables.scss'
 
-import Pointer1 from '../../../assets/icons/pointer1.png'
-import Pointer2 from '../../../assets/icons/pointer2.png'
-import Pointer3 from '../../../assets/icons/pointer3.png'
-import Pointer4 from '../../../assets/icons/pointer4.png'
+import { ReactComponent as Pointer1 } from '../../../assets/icons/pointer1.svg'
+import { ReactComponent as Pointer2 } from '../../../assets/icons/pointer2.svg'
+import { ReactComponent as Pointer3 } from '../../../assets/icons/pointer3.svg'
+import { ReactComponent as Pointer4 } from '../../../assets/icons/pointer4.svg'
 
 import ButtonArrow from '../../../components/ButtonArrow/ButtonArrow'
 
 const pointers = [
     {
-        icon: Pointer1,
+        icon: <Pointer1 />,
         headingText: "Strategy"
     },
     {
-        icon: Pointer2,
+        icon: <Pointer2 />,
         headingText: "Wireframing"
     },
     {
-        icon: Pointer3,
+        icon: <Pointer3 />,
         headingText: "Design"
     },
     {
-        icon: Pointer4,
+        icon: <Pointer4 />,
         headingText: "Development"
     }
 ]

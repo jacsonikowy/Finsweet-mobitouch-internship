@@ -42,7 +42,7 @@ const renderQuestions = () => {
 const FAQ: React.FC = () => {
     return (
         <div className='FAQ'>
-            <div>
+            <div className='FAQ-title'>
                 <h3>Frequently Asked Questions</h3>
                 <a href="#index">Contact us for more info</a>
             </div>

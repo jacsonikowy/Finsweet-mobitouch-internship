@@ -8,30 +8,15 @@ import Church from "../../../assets/images/church.png";
 import TextBlock from "../../../components/TextBlock/TextBlock";
 import ButtonArrow from "../../../components/ButtonArrow/ButtonArrow";
 
+import ProjectPanel from '../../../components/ProjectPanel/ProjectPanel'
+
 const Projects: React.FC = () => {
     return (
         <div className="projects">
-            <div className="item item-1">
-                <img src={Workhub} alt="workhub" />
-                <div className="item-block">
-                    <TextBlock
-                        className="item-block-textblock"
-                        level="h6"
-                        headingText="Worhub office Webflow Webflow Design"
-                        description="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam"
-                    />
-                    <ButtonArrow color="#FCD980" text="View project" />
-                </div>
-            </div>
-            <div className="item item-2">
-                <div className="unisaas">
-                    <img src={Unisaas} alt="unisaas" />
-                    <div className="item-block2">
-                        <h6>Unisaas Wesbite Design</h6>
-                        <ButtonArrow color="#FCD980" text="View Portfolio" />
-                    </div>
-                </div>
-                <img src={Church} alt="church" />
+            <ProjectPanel className="item-1" level="h6" headingText="Workhub office Webflow Webflow Design" description="Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam " backgroundActive={true} backgroundWidth="396px" image={Workhub}/>
+            <div className="item-2">
+                <ProjectPanel level="h6" headingText="Unisaas Website Design" description="" backgroundActive={true} backgroundWidth="100%" image={Unisaas} />
+                <ProjectPanel level="h6" headingText="Workhub Office Webflow Webflow Design" description="" backgroundActive={false} image={Church}/>
             </div>
         </div>
     );

@@ -8,82 +8,16 @@
   grid-template-rows: 1fr;
   grid-template-areas: "item-1 item-2";
   place-items: center;
-  .item-1 {
-    position: relative;
-    .item-block {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 96px 0;
-      position: absolute;
-      height: 100%;
-      width: 396px;
-      top: 0;
-      left: 0;
-      background: linear-gradient(
-        329.39deg,
-        #1c1e53 -10.96%,
-        rgba(28, 30, 83, 0.42) 103.96%
-      );
-      .item-block-textblock {
-        padding: 16px;
-      }
-    }
-  }
-  .item-2 {
-    .unisaas {
-      max-height: 284px;
-      max-width: 405px;
-      position: relative;
-      .item-block2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 56px;
-        background: linear-gradient(
-          329.39deg,
-          #1c1e53 -10.96%,
-          rgba(28, 30, 83, 0.42) 103.96%
-        );
-      }
-    }
-  }
 }
 
 @media screen and (max-width: $extralarge) {
   .projects {
-    display: block;
-    text-align: center;
-    padding: 2em;
     img {
       max-width: 100%;
       height: auto;
     }
-    .item-1 {
-      .item-block {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-        .item-block-textblock {
-          font-size: 22px;
-        }
-      }
-    }
-    .item-2 {
-      .unisaas {
-        .item-block2 {
-          padding: 0;
-          align-items: center;
-          justify-content: center;
-        }
-      }
-    }
+    display: block;
+    margin: 0 auto;
+    padding: 2em;
   }
 }

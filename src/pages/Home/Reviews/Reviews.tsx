@@ -25,8 +25,8 @@ const Reviews: React.FC = () => {
     return (
         <div className="reviews">
             <div className='reviewBlock'>
-                <TextBlock className="textblockOpinion" level='h2' headingText='What our clients say about us' description="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed." />
-                <Opinion avatar={Jenny.avatar} text={Jenny.text} title={Jenny.title} fullname={Jenny.fullname} />
+                <TextBlock className="textblockOpinion" level='h3' headingText='What our clients say about us' description="Lorem ipsum dolor sit amet, consectetur adipiscing elit sed." />
+                <Opinion className="reviewBlock-opinion" avatar={Jenny.avatar} text={Jenny.text} title={Jenny.title} fullname={Jenny.fullname} />
             </div>
         </div>
     )

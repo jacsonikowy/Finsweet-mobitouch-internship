@@ -1,16 +1,18 @@
 @import '../../../stylesheets/variables';
 
 .contactus-formdiv {
-    padding: 7em;
+    padding: 128px 270px;
     display: flex;
     flex-direction: column;
     align-items: center;
     .contactus-formdiv-textblock {
         text-align: center;
+        max-width: 562px;
     }
     .contactus-form {
         display: grid;
         place-content: center;
+        padding: 55px 76px 69px 74px;
         grid-template-columns: 50% 50%;
         margin: 64px 0;
         font-size: 18px;
@@ -18,7 +20,8 @@
         p {
             display: flex;
             flex-direction: column;
-            margin: 0 6px 24px 0;
+            margin: 24px 32px 24px 32px;
+            font-size: 18px;
             
             input {
                 max-width: 438px;
@@ -26,7 +29,7 @@
                 padding: 18px;
                 color: '#000000';
                 border: 1px solid rgba(0, 0, 0, 0.12);
-                border-radius: 18px;
+                border-radius: 8px;
             }
 
             textarea {

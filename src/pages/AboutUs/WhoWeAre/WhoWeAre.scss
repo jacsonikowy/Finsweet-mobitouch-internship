@@ -1,18 +1,18 @@
 @import '../../../stylesheets/variables';
 
 .whoweare {
-    padding: 10em;
+    padding: 128px 160px;
     margin: 0 auto;
     .whoweare-background {
         background: #F4F5F5;
-        padding: 5em;
     }
     .whoweare-text {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        padding: 80px;
         .whoweare-textblock {
             max-width: 515px;
-        padding: 1em;
         }
     }
     img {
