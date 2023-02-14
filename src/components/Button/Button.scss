@@ -18,18 +18,12 @@
     }
 }
 
-.black {
+.primary {
     color: #1B1C2B;
-}
-
-.white {
-    color: #F4F6FC;
-}
-
-.yellow {
     background-color: $yellow;
 }
 
-.darkblue {
+.secondary {
+    color: #F4F6FC;
     background-color: $darkblue;
 }
