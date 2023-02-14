@@ -5,10 +5,10 @@ import './PanelDotted.scss';
 
 const PanelDotted: React.FC<PanelProps> = ({headingText, level, description, icon}) => {
     return (
-        <>
-            <Panel className='paneldotted' headingText={headingText} level={level} description={description} icon={icon} />
+        <div className='paneldotted'>
             <div className='horizontal-dotted-line'></div>
-        </>
+            <Panel headingText={headingText} level={level} description={description} icon={icon} />
+        </div>
     )
 }
 

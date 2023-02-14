@@ -25,11 +25,15 @@ const Question: React.FC<QuestionProps> = ({number,question,answer, ...props}) =
     return (
         <div className='question'>
             <div className='answer'>
-                <h6 className='number'>{number}</h6>
-                <h6>{question}</h6>
-                <p className={`show ${active ? "active" : ""}`}>{answer}</p>
+                <div className="question-answer-text">
+                    <div className="question-answer-text-2">
+                        <p className='number'>{number}</p>
+                        <p className='question-question'>{question}</p>
+                    </div>
+                <img className={`${active ? "activeImg" : ""}`} src={Plus} alt="" onClick={() => showAnswer()}/>
+                </div>
+                <p className={`show body1 ${active ? "active" : ""}`}>{answer}</p>
             </div>
-            <img className={`${active ? "activeImg" : ""}`} src={Plus} alt="" onClick={() => showAnswer()}/>
         </div>
     )
 }

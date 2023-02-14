@@ -23,12 +23,11 @@ export interface PricingCardProps {
     productDescription: string,
     ArrayOfLinks: ArrayOfLinks,
     buttonName: string,
-    buttonTextColor: "white" | "black",
-    buttonBackgroundColor: "yellow" | "darkblue",
+    buttonVariant: "primary" | "secondary"
 }
 
 
-const PricingCard: React.FC<PricingCardProps> = ({price, content, backgroundColor, textColor, productName, productDescription, ArrayOfLinks, buttonName, buttonBackgroundColor, buttonTextColor}) => {
+const PricingCard: React.FC<PricingCardProps> = ({price, content, backgroundColor, textColor, productName, productDescription, ArrayOfLinks, buttonName, buttonVariant}) => {
     return (
         <div style={{backgroundColor: backgroundColor, color: textColor}} className="pricingcard">
             <div className="pricingcard-title">
@@ -48,7 +47,7 @@ const PricingCard: React.FC<PricingCardProps> = ({price, content, backgroundColo
             })}
             </div>
             <div className="pricingcard-buttondiv">
-                <Button text={buttonName} background={buttonBackgroundColor} textColor={buttonTextColor}/>
+                <Button text={buttonName} variant={buttonVariant}/>
             </div>
         </div>
     )

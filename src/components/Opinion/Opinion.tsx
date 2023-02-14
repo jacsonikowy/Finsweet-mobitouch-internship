@@ -15,13 +15,13 @@ type opinionProps = {
 
 const Opinion: React.FC<opinionProps> = ({avatar, text, fullname, title, className}) => {
     return (
-        <div className='review'>
-            <h2>"{text}"</h2>
+        <div className={`review ${className}`}>
+            <h5>"{text}"</h5>
             <div className='description'>
                 <img src={avatar} alt="" />
                 <div className='opinion'>
                     <span>{fullname}</span>
-                    <p>{title}</p>
+                    <p className='review-title'>{title}</p>
                 </div>
             </div>
             <div className='rectangles'>

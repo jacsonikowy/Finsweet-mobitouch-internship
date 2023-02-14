@@ -9,7 +9,7 @@ interface ParagraphProps {
 
 const Paragraph: React.FC<ParagraphProps> = ({description}) => {
     return (
-        <p className='body1'>{description}</p>
+        <p className='body1 textblock-paragraph'>{description}</p>
     )
 }
 

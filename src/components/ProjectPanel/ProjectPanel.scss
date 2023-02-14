@@ -1,0 +1,44 @@
+@import '../../../src/stylesheets/variables';
+
+.projectPanel {
+    position: relative;
+    .projectPanel-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 96px 0;
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+}
+
+.hundredpercent {
+    min-width: 100%;
+}
+
+.background1 {
+    background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+}
+
+@media screen and (max-width: $medium) {
+    .projectPanel {
+        .projectPanel-block {
+            justify-content: flex-end;
+            height: 100%;
+            padding: 32px 24px;
+            background: linear-gradient(329.39deg, #1C1E53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+            max-width: 100%;
+            .projectPanel-block-textblock {
+                font-size: 22px;
+                p {
+                    padding: 0;
+                }
+            }
+            .projectPanel-block-buttonArrow {
+                text-align: start;
+            }
+        }
+    }
+}
