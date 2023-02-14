@@ -7,7 +7,7 @@ interface LinkProps {
 
 const Links: React.FC<LinkProps> = ({ className }) => {
     return (
-        <div className={className}>
+        <div className={`navlink ${className}`}>
             <NavbarLink subpage={"Home"}></NavbarLink>
             <NavbarLink subpage={"About us"}></NavbarLink>
             <NavbarLink subpage={"Features"}></NavbarLink>

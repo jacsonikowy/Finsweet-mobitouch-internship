@@ -16,7 +16,7 @@ const getLinks: Iformat = (subpage: string) => {
 const NavbarLink = ({subpage}: {subpage: string}) => {
     return (
         <Link to={getLinks(subpage)}>
-            <a className="navlink" href="#index">{subpage}</a>
+            {subpage}
         </Link>
     )
 }
