@@ -5,6 +5,11 @@ import reportWebVitals from './reportWebVitals';
 import './stylesheets/_global.scss';
 import './stylesheets/_typography.scss'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fas)
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
