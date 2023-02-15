@@ -10,13 +10,19 @@
         max-width: 562px;
     }
     .contactus-form {
+        max-width: 1061px;
+        max-height: 640px;
+        padding: 55px 76px 69px 74px;
+        .contactus-form-grid {
         display: grid;
         place-content: center;
-        padding: 55px 76px 69px 74px;
         grid-template-columns: 50% 50%;
-        margin: 64px 0;
+        grid-template-areas: 
+            "name email"
+            "subject subject2"
+            "message message";
+        margin: 64px 0 0 0;
         font-size: 18px;
-        max-width: 1061px;
         p {
             display: flex;
             flex-direction: column;
@@ -33,9 +39,21 @@
             }
 
             textarea {
-                width: 100%;
+                max-width: 908px;
+                max-height: 138px;
                 @extend input
             }
+        }
+
+        .message {
+            grid-area: message;
+            width: 100%;
+        }
+
+        }
+
+        .submitBtn {
+            margin: 28px;
         }
     }
 }
