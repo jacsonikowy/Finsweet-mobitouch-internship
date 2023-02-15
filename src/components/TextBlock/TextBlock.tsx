@@ -21,9 +21,9 @@ const TextBlock: React.FC<TextblockProps> = ({
     className
 }) => {
     return createElement(
-        level,
+        "div",
         {className: `heading ${className}`},
-        headingText,
+        createElement(level, className, headingText),
         <Paragraph description={description}/>
     )
 }

@@ -27,7 +27,7 @@ const Navbar = () => {
             </div>
             <div className={`navlinks ${active ? "active" : ""}`}>
                 <Links className="nav-links" />
-                <Button text="Contact Us" variant="secondary" />
+                <Button text="Contact Us" variant="withoutBackground" />
             </div>
         </nav>
     );

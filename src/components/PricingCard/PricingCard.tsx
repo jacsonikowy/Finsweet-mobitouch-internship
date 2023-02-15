@@ -23,7 +23,7 @@ export interface PricingCardProps {
     productDescription: string,
     ArrayOfLinks: ArrayOfLinks,
     buttonName: string,
-    buttonVariant: "primary" | "secondary"
+    buttonVariant: "primary" | "secondary" | "black" | "arrowPrimary" | "arrowSecondary"
 }
 
 
@@ -34,7 +34,7 @@ const PricingCard: React.FC<PricingCardProps> = ({price, content, backgroundColo
                 <h3>{price}</h3>
                 <p className='body1'>{content}</p>
             </div>
-            <TextBlock className="" level='h6' headingText={productName} description={productDescription} />
+            <TextBlock className="pricingcard-textblock" level='h6' headingText={productName} description={productDescription} />
             <div className='pricingcard-links'>
             {ArrayOfLinks.map((link: LinksProps) => {
                 return (

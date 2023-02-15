@@ -1,7 +1,7 @@
-import ButtonArrow from '../../components/ButtonArrow/ButtonArrow'
 import React from 'react'
 
 import TextBlock from '../TextBlock/TextBlock'
+import Button from '../Button/Button'
 
 import './BlogPost.scss'
 
@@ -18,7 +18,12 @@ const BlogPost: React.FC<BlogPostProps> = ({photo, date, title, description}) =>
             <img src={photo} alt="Blog Preview Image" />
             <p>{date}</p>
             <TextBlock level="h6" headingText={title} description={description} />
-            <ButtonArrow className="body2" color="black" text='Read More' />
+            <Button
+                className="body2"
+                text="Read More"
+                variant="arrowSecondary"
+                withArrow={true}
+            />
         </div>
     )
 }

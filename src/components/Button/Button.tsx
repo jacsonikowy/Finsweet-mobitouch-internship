@@ -3,13 +3,13 @@ import './Button.scss'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     text: string,
-    variant: "primary" | "secondary",
-    className?: string
+    variant: "primary" | "secondary" | "arrowPrimary" | "arrowSecondary" | "black" | "withoutBackground",
+    withArrow?: boolean
 }
 
-const Button: React.FC<ButtonProps> = ({text, variant, className, ...props}) => {
+const Button: React.FC<ButtonProps> = ({text, variant, withArrow, ...props}) => {
     return (
-        <button className={`button ${variant} ${className}`} {...props}>{text}</button> 
+        <button className={`button ${variant}`} {...props}>{text}{withArrow ? "→": ""}</button> 
     )
 }
 

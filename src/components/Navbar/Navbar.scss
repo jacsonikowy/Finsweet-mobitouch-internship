@@ -8,15 +8,28 @@ nav {
   align-items: center;
   color: white;
   padding: 30px 160px;
-  .nav-start {
-    width: 180px;
+  &.bars {
+    display: none;
   }
-  a {
+  &.nav-start {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &a {
     color: #bbbbcb;
   }
-  .navlinks {
+  &.navlinks {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    &.nav-links {
+      display: flex;
+    }
+    &.active {
+      display: flex;
+    }
   }
 }
 
@@ -26,25 +39,35 @@ nav {
   }
 }
 
+@media screen and (max-width: $extralarge) {
+  nav {
+    padding: 64px 64px;
+  }
+}
+
 @media screen and (max-width: $large) {
   nav {
+    padding: 22px 20px;
+    max-height: 550px;
     flex-direction: column;
     align-items: flex-start;
-    .bars {
+    &.bars {
       display: block;
       width: 30px;
       height: 30px;
       cursor: pointer;
     }
-    .navlinks {
+    &.navlinks {
       padding: 16px;
       display: none;
       top: 20%;
+      justify-content: center;
       flex-direction: column;
-      align-items: baseline;
+      align-items: center;
       width: 100%;
-      .nav-links {
+      &.nav-links {
         flex-direction: column;
+        text-align: center;
       }
       * {
         padding: 16px;
