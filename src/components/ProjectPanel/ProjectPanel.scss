@@ -3,30 +3,13 @@
 .projectPanel {
   position: relative;
   margin: 0px 32px 32px 0;
-  &.secondary {
-    max-width: 396px;
-    background: transparent;
-    background: linear-gradient(
-      329.39deg,
-      #1c1e53 -10.96%,
-      rgba(28, 30, 83, 0.42) 103.96%
-    );
-  }
-  &.max {
-    width: 100%;
-    background: linear-gradient(
-        329.39deg,
-        #1c1e53 -10.96%,
-        rgba(28, 30, 83, 0.42) 103.96%
-      );  
-  }
-  &img {
+  img {
     position: relative;
     display: block;
     z-index: -1;
     max-width: fit-content;
   }
-  &.projectPanel-block {
+  .projectPanel-block {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -35,6 +18,23 @@
     height: 100%;
     top: 0;
     left: 0;
+    &.secondary {
+      max-width: 396px;
+      background: transparent;
+      background: linear-gradient(
+        329.39deg,
+        #1c1e53 -10.96%,
+        rgba(28, 30, 83, 0.42) 103.96%
+      );
+    }
+    &.max {
+      width: 100%;
+      background: linear-gradient(
+          329.39deg,
+          #1c1e53 -10.96%,
+          rgba(28, 30, 83, 0.42) 103.96%
+        );  
+    }
   }
 }
 
@@ -55,24 +55,24 @@
 @media screen and (max-width: $medium) {
   .projectPanel {
     margin: 16px 16px;
-    &img {
+    img {
       position: relative;
       z-index: -1;
       display: block;
     }
-    &.projectPanel-block {
+    .projectPanel-block {
       justify-content: flex-end;
       align-items: center;
       height: 100%;
-      &.projectPanel-block-textblock {
-        &h6 {
+      .projectPanel-block-textblock {
+        h6 {
           font-size: 16px !important;
         }
-        &p {
+        p {
           padding: 0;
         }
       }
-      &.projectPanel-block-buttonArrow {
+      .projectPanel-block-buttonArrow {
         text-align: start;
       }
     }
