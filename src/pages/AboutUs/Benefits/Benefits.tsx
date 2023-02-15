@@ -4,49 +4,17 @@ import TextBlock from '../../../components/TextBlock/TextBlock'
 
 import './Benefits.scss'
 
-import PencilWithLiner from '../../../assets/icons/Icon(2).svg'
-import Paper from '../../../assets/icons/Icon(5).svg'
-import People from '../../../assets/icons/Icon.svg'
-
 import logo1 from '../../../assets/icons/logo1.png'
 import logo2 from '../../../assets/icons/logo2.png'
 import logo3 from '../../../assets/icons/logo3.png'
 import logo4 from '../../../assets/icons/logo4.png'
 import logo5 from '../../../assets/icons/logo5.png'
 
+import { panelValues } from '../../../utils/benefitsPanelData'
 
 
-type ArrayOfLogos = Array<string> 
-
-const logos: ArrayOfLogos = [
+const logos: string[] = [
     logo1, logo2, logo3, logo4, logo5
-]
-
-
-
-
-
-type ArrayObject = Array<PanelProps>
-
-const panelValues: ArrayObject = [
-    {
-        headingText: 'Customize with ease',
-        level: 'h6',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.',
-        icon: Paper
-    },
-    {
-        headingText: 'Perfectly Responsive',
-        level: 'h6',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.',
-        icon: PencilWithLiner
-    },
-    {
-        headingText: 'Friendly Support',
-        level: 'h6',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.',
-        icon: People
-    }
 ]
 
 

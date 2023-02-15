@@ -6,7 +6,7 @@ import Workhub from "../../../assets/images/Project1.png";
 import Unisaas from "../../../assets/images/Unisaas.png";
 import Church from "../../../assets/images/church.png";
 import TextBlock from "../../../components/TextBlock/TextBlock";
-import ButtonArrow from "../../../components/ButtonArrow/ButtonArrow";
+import Button from "../../../components/Button/Button";
 
 import ProjectPanel from "../../../components/ProjectPanel/ProjectPanel";
 
@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
         <div className="projects">
             <div className="projects-text">
                 <h2>View our projects</h2>
-                <ButtonArrow text="View More" />
+                <Button text="View More" variant="arrowSecondary" withArrow={true} />
             </div>
             <div className="grid">
                 <ProjectPanel
@@ -41,6 +41,7 @@ const Projects: React.FC = () => {
                         headingText="Workhub Office Webflow Webflow Design"
                         description=""
                         backgroundActive={false}
+                        backgroundWidth="max"
                         image={Church}
                     />
                 </div>

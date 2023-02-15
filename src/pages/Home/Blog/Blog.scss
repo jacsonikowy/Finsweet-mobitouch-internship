@@ -1,7 +1,7 @@
 @import '../.../../../../stylesheets/variables';
 
 .ourblog {
-    padding: 7em;
+    margin: 128px 160px;
     h1 {
         margin-bottom: 0.5em;
     }
@@ -13,7 +13,7 @@
 
 @media screen and (max-width: $extralarge) {
     .ourblog {
-        padding: 2em;
+        margin: 48px 16px;
         .blogposts {
             display: block;
             .blogpost {

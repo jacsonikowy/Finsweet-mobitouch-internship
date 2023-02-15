@@ -5,7 +5,10 @@
     display: flex;
     justify-content: space-between;
     .FAQ-title {
-        padding: 0 136px 32px 0;
+        max-width: 406px;
+    }
+    .questions {
+        max-width: 843px;
     }
 }
 

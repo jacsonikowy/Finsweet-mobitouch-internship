@@ -3,7 +3,6 @@ import TextBlock from '../../../components/TextBlock/TextBlock'
 import Button from '../../../components/Button/Button'
 import './Startpage.scss'
 
-import ButtonArrow from '../../../components/ButtonArrow/ButtonArrow'
 import Illustration from '../../../assets/images/Illustration.png';
 
 const Startpage: React.FC = () => {
@@ -15,7 +14,7 @@ const Startpage: React.FC = () => {
             </div>
             <div className='buttons'>
                 <Button className="buttons-button" text='View our work' variant='primary' />
-                <ButtonArrow text="View Pricing" color="white" />
+                <Button text="View Pricing" variant='arrowPrimary' withArrow={true} />
             </div>
         </div>
     )

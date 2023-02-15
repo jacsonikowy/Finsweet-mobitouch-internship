@@ -2,36 +2,8 @@ import React from 'react'
 import Question from '../../../components/Question/Question'
 
 import './FAQ.scss'
+import { questions, questionProps } from '../../../utils/questionData'
 
-interface questionProps {
-    number: string,
-    question: string
-}
-
-type ArrayObject = Array<questionProps>;
-
-const questions: ArrayObject = [
-    {
-        number: '01',
-        question: 'How much time does it take?',
-    },
-    {
-        number: '02',
-        question: 'What is your class naming convention?',
-    },
-    {
-        number: '03',
-        question: 'How do you communicate?',
-    },
-    {
-        number: '04',
-        question: 'I have a bigger project. Can you handle it?',
-    },
-    {
-        number: '05',
-        question: 'What is your class naming convention?'
-    }
-]
 
 const renderQuestions = () => {
     return questions.map((question: questionProps) => {

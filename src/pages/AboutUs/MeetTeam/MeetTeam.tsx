@@ -1,37 +1,10 @@
 import React from 'react'
 
+import TeamMember from '../../../components/TeamMember/TeamMember'
+
 import './MeetTeam.scss'
 
-import TeamMember, { TeamMemberProps } from '../../../components/TeamMember/TeamMember'
-
-import FirstMember from '../../../assets/images/maninblacksuite.png'
-import SecondMember from '../../../assets/images/seriousman.png'
-import ThirdMember from '../../../assets/images/maninwhiteshirt.png'
-import FourthMember from '../../../assets/images/transgender.png'
-
-type ArrayMembersProps = Array<TeamMemberProps>
-
-const ArrayMembers: ArrayMembersProps = [
-    {
-        img: FirstMember,
-        name: 'John Smith',
-        title: 'CEO'
-    },
-    {
-        img: SecondMember,
-        name: 'Simon Adams',
-        title: 'CTO'
-    },
-    {
-        img: ThirdMember,
-        name: 'Paul Jones',
-        title: 'Design Lead'
-    },{
-        img: FourthMember,
-        name: 'Sara Hardin',
-        title: 'Project Manager'
-    }
-]
+import { ArrayMembers } from '../../../utils/teamMembers'
 
 const MeetTeam: React.FC = () => {
     return (

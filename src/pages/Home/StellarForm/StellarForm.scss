@@ -1,85 +1,89 @@
 @import '../../../stylesheets/variables';
 
-.stellarForm {
-    padding: 128px 162px 128px 158px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: relative;
-    margin: 5em auto;
-    color: white;
-    .grid-form {
-        position: absolute;
-        top: 15em;
+.stellarform {
+    margin: 128px 162px 128px 158px;
+    max-width: 100%;
+    .stellarform-flex {
         width: 100%;
-        align-items: center;
+        height: 691px;
         display: flex;
-        flex-direction: column;
-        z-index: 20;
-        * {
-            position: relative;
+        justify-content: center;
+        .stellarform-flex-img {
+            color: #FFFFFF;
+            width: 50%;
+            height: 100%;
+            background: url('../../../assets/images/womanwritingonpaper.png') round, rgba(28, 30, 83, 0.5);
+            background-blend-mode: darken;
+            .stellarform-flex-textblock {
+                padding: 96px;
+                p {
+                    padding: 16px 0 0 0;
+                }
+            }
+        }
+        .stellarform-flex-second {
+            color: #FFFFFF;
+            height: 100%;
+            align-self: flex-end;
+            padding: 96px 96px 40px 96px;
+            max-width: 624px;
+            background: #1C1E53;
+            .form {
+                display: flex;
+                flex-direction: column;
+                input {
+                    width: 100%;
+                    padding: 18px 0 18px 31px;
+                    margin: 16px 0 0 0;
+                    background: none;
+                    border-radius: 8px;
+                    border: 1.5px solid rgba(255, 255, 255, 0.05);
+                    color: #FFFFFF;
+                }
+                .submitBtn {
+                    width: 100%;
+                    margin: 39px 0 0 0;
+                    font-size: 18px;
+                    padding: 16px 0;
+                }
+                .stellarform-flex-second-buttonArrow {
+                    align-self: center;
+                    font-size: 18px;
+                    width: 100%;
+                    margin: 28px 190px 48px 190px;
+                    text-align: center;
+                }
+            }
         }
     }
-    input {
-        border: none;
-        background: none;
-        padding: 1em;
-        border: 1.5px solid #FFFFFF0D;
-        border-radius: 0.5em;
-        margin-top: 1em;
-        color: white;
-    }
-}
-
-.grid-item {
-    position: relative;
-    height: 200px;
-}
-
-
-.background {
-    background: #1C1E5380;
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    max-width: 1280px;
-    height: 692px;
-    z-index: 10;
-}
-
-.background-1 {
-    background: url('../../../assets/images/womanwritingonpaper.png') no-repeat;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 691px;
-}
-
-.background-2 {
-    background-color: $tintblue;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    height: 691px;
-}
-.text {
-    position: absolute;
-    padding: 1em;
-    z-index: 20;
-}
-
-.submitBtn {
-    margin-top: 3em;
 }
 
 @media screen and (max-width: $extralarge) {
-    .grid {
+    .stellarform {
         display: block;
+        margin: 136px 0 164px 0;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .stellarform-flex {
+            flex-direction: column;
+            justify-content: center;
+            .stellarform-flex-img {
+                width: 100%;
+                min-height: 250px;
+                .stellarform-flex-textblock {
+                    display: none;
+                }
+            }
+            .stellarform-flex-second {
+                min-width: 100%;
+                align-self: auto;
+                padding: 48px 16px 36px 16px;
+                h5 {
+                    font-size: 24px !important;
+                }
+            }
+        }
     }
 }

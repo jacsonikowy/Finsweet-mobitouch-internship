@@ -6,6 +6,8 @@ import './StellarForm.scss'
 import TextBlock from '../../../components/TextBlock/TextBlock';
 import Button from '../../../components/Button/Button';
 
+import WomanWritingOnPaper from '../../../assets/images/womanwritingonpaper.png'
+
 const StellarForm: React.FC = () => {
 
     /* const formik = useFormik({
@@ -21,21 +23,19 @@ const StellarForm: React.FC = () => {
     */
 
     return (
-        <div className='stellarForm'>
-            <div className="grid">
-                <div className='background'></div>
-                <div className='grid-item'>
-                    <div className="background-1"></div>
-                    <TextBlock className="text" level='h1' headingText='Building stellar websites for early startups' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.' />
+        <div className='stellarform'>
+            <div className="stellarform-flex">
+                <div className='stellarform-flex-img'>
+                    <TextBlock className="stellarform-flex-textblock" level='h1' headingText='Building stellar websites for early startups' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.' />
                 </div>
-                <div className='grid-item'>
-                    <div className='background-2'></div>
-                    <TextBlock className='text' level='h5' headingText='Send inquiry' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.' />
-                    <form className="grid-form" action="">
+                <div className="stellarform-flex-second">
+                    <TextBlock className='stellarform-flex-second-textblock' level='h5' headingText='Send inquiry' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.' />
+                    <form className="form" action="">
                         <input className="body1" type="text" placeholder='Your Name'/>
                         <input className="body1" type="text" placeholder='Email'/>
                         <input className="body1" type="text" placeholder='Paste your Figma design URL'/>
                         <Button className="submitBtn" text="Submit an Inquiry" variant="primary" />
+                        <Button className="stellarform-flex-second-buttonArrow" text='Get in touch with us' variant='arrowPrimary' withArrow={true} />
                     </form>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 @import '../../../stylesheets/variables';
 
 .benefits {
-    padding: 7em;
+    padding: 132px;
     h2 {
         text-align: center;
     }
@@ -20,11 +20,26 @@
     }
 }
 
+@media screen and (max-width: $extralarge) {
+    .benefits {
+        padding: px;
+        .benefits-icons {
+            .benefits-icons-textblock {
+                img {
+                padding: 16px;
+
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: $large) {
     .benefits {
-        padding: 2em;
+        padding: 16px;
         .benefits-panels {
-            padding: 32px;
+            margin: 12px 0;
+            padding: 16px;
             flex-direction: column;
         }
         .benefits-icons {

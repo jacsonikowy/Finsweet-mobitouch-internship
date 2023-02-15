@@ -4,13 +4,13 @@ import TextBlock from '../../../components/TextBlock/TextBlock';
 import Panel from '../../../components/Panel/Panel';
 import './Work.scss'
 import '../../../stylesheets/_variables.scss'
+import Button from '../../../components/Button/Button';
 
 import { ReactComponent as Pointer1 } from '../../../assets/icons/pointer1.svg'
 import { ReactComponent as Pointer2 } from '../../../assets/icons/pointer2.svg'
 import { ReactComponent as Pointer3 } from '../../../assets/icons/pointer3.svg'
 import { ReactComponent as Pointer4 } from '../../../assets/icons/pointer4.svg'
 
-import ButtonArrow from '../../../components/ButtonArrow/ButtonArrow'
 
 const pointers = [
     {
@@ -43,7 +43,7 @@ const Work: React.FC = () => {
         <div className='work'>
             <div className='howwework'>
                 <TextBlock headingText='How we work' level='h2' description='Lorem ipsum dolor sit amet, consectetur adipiscing, sed do eiusmod tempor.' />
-                <ButtonArrow text="Get in touch with us" color="#2405F2" />
+                <Button text="Get in touch with us" variant='arrowSecondary' withArrow={true} />
             </div>
             <div className='panels'>
                 {renderPointers()}
