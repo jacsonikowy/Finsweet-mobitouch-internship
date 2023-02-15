@@ -1,26 +1,29 @@
-@import '../../../stylesheets/variables';
+@import "../../../stylesheets/variables";
 
 .ourDesign {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 160px 128px;
-    .textblockDesign {
-        max-width: 520px;
-        margin:0 auto;
-    }
-    img {
-        padding: 2em 0;
-    }
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 160px 128px;
+  .textblockDesign {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  img {
+    padding: 2em 0;
+  }
+  .aboutUsDiv {
+    padding: 0 64px 0 0;
+  }
 }
 
 @media screen and (max-width: $extralarge) {
-    .ourDesign {
-        padding: 2em;
-        display: block;
-        margin: 0 auto;
-        .aboutUsDiv {
-            text-align: center;
-        }
+  .ourDesign {
+    padding: 2em;
+    display: block;
+    margin: 0 auto;
+    .aboutUsDiv {
+      text-align: center;
     }
+  }
 }

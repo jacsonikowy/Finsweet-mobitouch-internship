@@ -1,24 +1,25 @@
-@import '../../../stylesheets/variables';
+@import "../../../stylesheets/variables";
 
 .FAQ {
-    padding: 128px 162px 0 152px;
-    display: flex;
-    justify-content: space-between;
-    .FAQ-title {
-        max-width: 406px;
-    }
-    .questions {
-        max-width: 843px;
-    }
+  padding: 128px 162px 0 152px;
+  display: flex;
+  justify-content: space-between;
+  .FAQ-title {
+    max-width: 406px;
+  }
+  .questions {
+    max-width: 843px;
+    margin: 32px 0;
+  }
 }
 
 a {
-    color: #2405F2;
+  color: #2405f2;
 }
 
-@media screen and (max-width: $extralarge){
-    .FAQ {
-        display: block;
-        padding: 16px;
-    }
+@media screen and (max-width: $extralarge) {
+  .FAQ {
+    display: block;
+    padding: 16px;
+  }
 }

@@ -1,60 +1,67 @@
-@import '../../stylesheets/variables';
-
+@import "../../stylesheets/variables";
 
 .button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: solid 2px #f4f6fc33;
+  border-radius: 41px;
+  padding: 1em;
+  width: 185px;
+  text-align: start;
+  cursor: pointer;
+
+  &:hover {
+    transition: opacity 1s ease-in-out;
+    opacity: 0.5;
+  }
+
+  &.primary {
+    color: #1b1c2b;
+    background-color: $yellow;
+    text-align: center;
+  }
+
+  &.yellow {
+    color: #fcd980;
     border: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: solid 2px #F4F6FC33;
-    border-radius: 41px;
-    padding: 1em;
-    width: 185px;
-    text-align: start;
-    cursor: pointer;
-    
-    &:hover{
-        transition: opacity 1s ease-in-out;
-        opacity: 0.5;
-    }
+    background: none;
+    width: 100%;
+    text-align: center;
+  }
+}
 
-    &.primary {
-        color: #1B1C2B;
-        background-color: $yellow;
-        text-align: center;
-    }
+.secondary {
+  color: #f4f6fc;
+  background-color: $darkblue;
+  text-align: center;
+}
 
-    &.secondary {
-        color: #F4F6FC;
-        background-color: $darkblue;
-        text-align: center;
-    }
+.withoutBackground {
+  background: none;
+  text-align: center;
+  color: #ffffff;
+}
 
-    &.withoutBackground {
-        background: none;
-        text-align: center;
-        color: #FFFFFF;
-    }
+.black {
+  background: $darkblue;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+}
 
-    &.black {
-        background: $darkblue;
-        color: #FFFFFF;
-        text-align: center;
-        border: none;
-    }
+.arrowPrimary {
+  background: none;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  padding: 2px;
+}
 
-    &.arrowPrimary {
-        background: none;
-        color: #FFFFFF;
-        border: none;
-        font-size: 14px;
-        padding: 2px;
-    }
-
-    &.arrowSecondary {
-        background: none;
-        color: #000000;
-        border: none;
-        font-size: 14px;
-        padding: 2px;
-    }
+.arrowSecondary {
+  background: none;
+  color: #000000;
+  border: none;
+  font-size: 14px;
+  padding: 2px;
 }

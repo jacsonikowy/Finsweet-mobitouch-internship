@@ -1,54 +1,55 @@
-@import '../../../stylesheets/variables';
+@import "../../../stylesheets/variables";
 
 .mission {
-    background: #EEF4FA;
-    padding: 7em;
-    .mission-inspire {
-        display: flex;
-        justify-content: space-around;
-        .mission-inspire-textblock {
-            max-width: 623px;
-        }
+  background: #eef4fa;
+  padding: 7em;
+  .mission-inspire {
+    display: flex;
+    justify-content: space-around;
+    .mission-inspire-textblock {
+      max-width: 623px;
     }
-    .mission-vision {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-        position: relative;
-        .mission-vision-textblock {
-            align-self: center;
-            max-width: 623px;
-        }
-        .mission-vision-p {
-            position: absolute;
-            right: 0;
-        }
+  }
+  .mission-vision {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    position: relative;
+    .mission-vision-textblock {
+      align-self: center;
+      max-width: 623px;
+      padding: 16px;
     }
+    .mission-vision-p {
+      position: absolute;
+      right: 0;
+    }
+  }
 }
 @media screen and (max-width: $extralarge) {
-    .mission {
-        padding: 2em;
-        .mission-inspire {
-            display: block;
-            margin: auto 0;
-            text-align: center;
-            .mission-inspire-textblock {
-                margin: 0 auto;
-            }
-            img {
-                padding: 16px;
-            }
-        }
-        .mission-vision {
-            text-align: center;
-            display: block;
-            margin: auto 0;
-            .mission-vision-textblock {
-                margin: 0 auto;
-            }
-            img {
-                padding: 16px;
-            }
-        }
+  .mission {
+    padding: 2em;
+    .mission-inspire {
+      display: block;
+      margin: auto 0;
+      text-align: center;
+      .mission-inspire-textblock {
+        margin: 0 auto;
+      }
+      img {
+        padding: 16px;
+      }
     }
+    .mission-vision {
+      text-align: center;
+      display: block;
+      margin: auto 0;
+      .mission-vision-textblock {
+        margin: 0 auto;
+      }
+      img {
+        padding: 16px;
+      }
+    }
+  }
 }

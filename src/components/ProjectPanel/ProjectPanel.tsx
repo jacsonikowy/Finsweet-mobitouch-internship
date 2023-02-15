@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectPanel.scss";
 
 import TextBlock, { TextblockProps } from "../TextBlock/TextBlock";
-import Button from "../Button/Button"
+import Button from "../Button/Button";
 
 interface ProjectPanelProps extends TextblockProps {
     backgroundActive: boolean;
@@ -21,7 +21,10 @@ const ProjectPanel: React.FC<ProjectPanelProps> = ({
     return (
         <div className={`projectPanel ${backgroundActive ? "background1" : ""}`}>
             <img className="projectPanel-img" src={image} alt="" />
-            <div className={`projectPanel-block ${backgroundWidth === "max" ? "max" : "secondary"}`}>
+            <div
+                className={`projectPanel-block ${backgroundWidth === "max" ? "max" : "secondary"
+                    }`}
+            >
                 <TextBlock
                     className="projectPanel-block-textblock"
                     level={level}
@@ -30,7 +33,7 @@ const ProjectPanel: React.FC<ProjectPanelProps> = ({
                 />
                 <Button
                     className="projectPanel-block-buttonArrow"
-                    variant="arrowPrimary"
+                    variant="yellow"
                     text="View project"
                     withArrow={true}
                 />

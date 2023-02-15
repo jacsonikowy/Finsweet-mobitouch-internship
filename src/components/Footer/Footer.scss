@@ -69,17 +69,17 @@ footer {
 
 @media screen and (max-width: $large) {
   footer {
-    &.footerEntry {
+    .footerEntry {
       display: flex;
       flex-direction: column;
       padding: 16px;
-      &.finsweet {
+      .finsweet {
         flex-direction: column;
       }
-      &.box {
+      .box {
         margin: 48px 0;
         flex-direction: column;
-        min-height: 200px; 
+        min-height: 200px;
         width: 100%;
         text-align: center;
         align-self: center;
@@ -89,7 +89,7 @@ footer {
         }
       }
     }
-    &.footerEnd {
+    .footerEnd {
       display: block;
       padding: 16px 16px;
       .footerEnd-links {
@@ -100,7 +100,7 @@ footer {
           padding: 12px;
         }
       }
-      &p {
+      p {
         text-align: center;
         padding: 20px;
       }

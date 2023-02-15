@@ -1,67 +1,70 @@
-@import '../../../stylesheets/variables';
+@import "../../../stylesheets/variables";
 
 .startpage {
-    background-color: $tintblue;
-    color: $primaryColor;
-    padding: 126px 160px 128px 160px;
-    max-height: 760px;
-    .textblock {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        img {
-            min-width: 648px;
-        }
+  background-color: $tintblue;
+  color: $primaryColor;
+  padding: 126px 160px 128px 160px;
+  max-height: 760px;
+  .textblock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    img {
+      min-width: 648px;
     }
-    div {
-        margin-top: 3em;
+  }
+  div {
+    margin-top: 3em;
+  }
+  .buttons {
+    padding: 48px 0 0 0;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+    .buttons-button {
+      margin-right: 40px;
     }
-    .buttons {
-        padding: 48px 0 0 0;
-        .buttons-button {
-            margin-right: 40px; 
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 1280px) {
-    .startpage {
-        position: relative;
-        height: 760px;
-        &::before {
-            content: "";
-            width: 100%;
-            height: 100%;
-            display: block;
-            top: 250px;
-            left: 500px;
-            position: absolute;
-            background: url('../../../assets/images/Illustration.png') no-repeat;
-            opacity: 0.3;
-        }
-        padding: 2em;
-        background-position: left;
-        .textblock {
-            position: relative;
-            display: block;
-            padding: 2em 0;
-            img {
-                margin: 2em auto;
-                max-width: 100%;
-                height: auto;
-                display: none;
-            }
-        }
-        .buttons {
-            position: relative;
-        }
+  .startpage {
+    position: relative;
+    height: 760px;
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: block;
+      top: 250px;
+      left: 500px;
+      position: absolute;
+      background: url("../../../assets/images/Illustration.png") no-repeat;
+      opacity: 0.3;
     }
+    padding: 2em;
+    background-position: left;
+    .textblock {
+      position: relative;
+      display: block;
+      padding: 2em 0;
+      img {
+        margin: 2em auto;
+        max-width: 100%;
+        height: auto;
+        display: none;
+      }
+    }
+    .buttons {
+      position: relative;
+    }
+  }
 }
 
 @media screen and (max-width: $medium) {
-    .startpage {
-        &::before {
-            left: 0;
-        }
+  .startpage {
+    &::before {
+      left: 0;
     }
+  }
 }

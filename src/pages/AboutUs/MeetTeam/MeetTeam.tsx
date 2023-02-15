@@ -1,22 +1,28 @@
-import React from 'react'
+import React from "react";
 
-import TeamMember from '../../../components/TeamMember/TeamMember'
+import TeamMember from "../../../components/TeamMember/TeamMember";
 
-import './MeetTeam.scss'
+import "./MeetTeam.scss";
 
-import { ArrayMembers } from '../../../utils/teamMembers'
+import { ArrayMembers } from "../../../mocks/teamMembers";
 
 const MeetTeam: React.FC = () => {
     return (
         <div className="meetteam">
             <h2>Meet Our Team</h2>
             <div className="meetteam-teammembers">
-                {ArrayMembers.map(member => {
-                    return <TeamMember img={member.img} name={member.name} title={member.title} />
+                {ArrayMembers.map((member) => {
+                    return (
+                        <TeamMember
+                            img={member.img}
+                            name={member.name}
+                            title={member.title}
+                        />
+                    );
                 })}
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default MeetTeam
+export default MeetTeam;

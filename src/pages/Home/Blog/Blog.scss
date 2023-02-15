@@ -1,24 +1,30 @@
-@import '../.../../../../stylesheets/variables';
+@import "../.../../../../stylesheets/variables";
 
 .ourblog {
-    margin: 128px 160px;
-    h1 {
-        margin-bottom: 0.5em;
-    }
-    .blogposts {
-        display: flex;
-        justify-content: space-around;
-    }
+  margin: 128px 160px;
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  .blogposts {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .ourblog {
+    margin: 64px 18px;
+  }
 }
 
 @media screen and (max-width: $extralarge) {
-    .ourblog {
-        margin: 48px 16px;
-        .blogposts {
-            display: block;
-            .blogpost {
-                margin: 0 auto;
-            }
-        }
+  .ourblog {
+    margin: 48px 16px;
+    .blogposts {
+      display: block;
+      .blogpost {
+        margin: 0 auto;
+      }
     }
+  }
 }

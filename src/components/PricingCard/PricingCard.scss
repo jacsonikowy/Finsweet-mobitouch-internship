@@ -1,53 +1,53 @@
-@import '../../stylesheets/variables';
+@import "../../stylesheets/variables";
 
 .pricingcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 406px;
+  padding: 48px;
+  height: 745px;
+  border-radius: 12px;
+  margin: 64px 0;
+  .pricingcard-textblock {
+    min-height: 150px;
+  }
+  .pricingcard-title {
+    margin: 2px 0;
+    display: flex;
+    align-items: center;
+    * {
+      padding: 8px;
+    }
+  }
+  .pricingcard-links {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    max-width: 406px;
-    padding: 48px;
-    height: 745px;
-    border-radius: 12px;
-    margin: 64px 0;
-    &.pricingcard-textblock {
-        min-height: 150px;
-    }
-    &.pricingcard-title {
-        margin: 2px 0;
-        display: flex;
-        align-items: center;
-        * {
-            padding: 8px;
+    min-height: 380px;
+    span {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 20px 0 0 0;
+      p {
+        margin: 6px;
+        &.lessopacity {
+          opacity: 0.5;
         }
-    } 
-    &.pricingcard-links {
-        display: flex;
-        flex-direction: column;
-        min-height: 380px;
-        &span {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            padding: 20px 0 0 0;
-            &p {
-                margin: 6px;
-                &.lessopacity {
-                    opacity: 0.5;
-                }
-            }
-            &.unactive {
-                mix-blend-mode: luminosity;
-            }
-        }
+      }
+      .unactive {
+        mix-blend-mode: luminosity;
+      }
     }
-    &.pricingcard-buttondiv {
-        margin: auto;
-        text-align: center;
-    }
+  }
+  .pricingcard-buttondiv {
+    margin: auto;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: $large) {
-    .pricingcard {
-        padding: 16px;
-    }
+  .pricingcard {
+    padding: 16px;
+  }
 }

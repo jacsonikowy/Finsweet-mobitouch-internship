@@ -30,15 +30,13 @@
     &.max {
       width: 100%;
       background: linear-gradient(
-          329.39deg,
-          #1c1e53 -10.96%,
-          rgba(28, 30, 83, 0.42) 103.96%
-        );  
+        329.39deg,
+        #1c1e53 -10.96%,
+        rgba(28, 30, 83, 0.42) 103.96%
+      );
     }
   }
 }
-
-
 
 .hundredpercent {
   min-width: 100%;
@@ -52,9 +50,10 @@
   }
 }
 
-@media screen and (max-width: $medium) {
+@media screen and (max-width: 1400px) {
   .projectPanel {
     margin: 16px 16px;
+    width: 420px;
     img {
       position: relative;
       z-index: -1;
@@ -78,4 +77,3 @@
     }
   }
 }
-
