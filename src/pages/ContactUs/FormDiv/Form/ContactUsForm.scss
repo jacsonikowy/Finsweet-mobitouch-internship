@@ -1,4 +1,4 @@
-@import '../../../stylesheets/variables';
+@import '../../../../stylesheets/variables';
 
 .contactus-formdiv {
     padding: 128px 270px;
@@ -23,6 +23,15 @@
             "message message";
         margin: 64px 0 0 0;
         font-size: 18px;
+        .form-field {
+            &.active {
+                border: 1.5px solid $danger;
+            }
+        }
+        .error {
+            color: $danger;
+            font-size: 12px;
+        }
         p {
             display: flex;
             flex-direction: column;
@@ -38,15 +47,22 @@
                 border-radius: 8px;
             }
 
-            textarea {
-                max-width: 908px;
-                max-height: 138px;
-                @extend input
-            }
         }
 
         .message {
             grid-area: message;
+            .textarea-field {
+                max-width: 908px;
+                max-height: 138px;
+                padding: 18px;
+                color: '#000000';
+                border: 1px solid rgba(0, 0, 0, 0.12);
+                border-radius: 8px;
+                &.active {
+                    border: 1.5px solid $danger;
+                }
+
+            }
         }
 
         }
