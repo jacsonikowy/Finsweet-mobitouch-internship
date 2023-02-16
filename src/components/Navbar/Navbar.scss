@@ -7,7 +7,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: white;
-  padding: 30px 160px;
+  padding: 60px 160px;
   .bars {
     display: none;
   }
@@ -22,7 +22,7 @@ nav {
   .navlinks {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 100%;
     .nav-links {
       display: flex;
@@ -39,15 +39,15 @@ nav {
   }
 }
 
-@media screen and (max-width: $extralarge) {
+@media screen and (max-width: $megalarge) {
   nav {
     padding: 64px 64px;
   }
 }
 
-@media screen and (max-width: $large) {
+@media screen and (max-width: $extralarge) {
   nav {
-    padding: 22px 20px;
+    padding: 44px 20px;
     max-height: 550px;
     flex-direction: column;
     align-items: flex-start;

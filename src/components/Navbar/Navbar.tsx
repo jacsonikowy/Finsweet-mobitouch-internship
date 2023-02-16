@@ -9,6 +9,8 @@ import {
     findIconDefinition,
 } from "@fortawesome/fontawesome-svg-core";
 
+import  { Link } from 'react-router-dom'
+
 const barsLookup: IconLookup = { prefix: "fas", iconName: "bars" };
 const barsIconDefiniton: IconDefinition = findIconDefinition(barsLookup);
 
@@ -27,7 +29,9 @@ const Navbar = () => {
             </div>
             <div className={`navlinks ${active ? "active" : ""}`}>
                 <Links className="nav-links" />
-                <Button text="Contact Us" variant="withoutBackground" />
+                <Link to="/contact-us">
+                    <Button variant="withoutBackground" text="Contact Us" />
+                </Link>
             </div>
         </nav>
     );
