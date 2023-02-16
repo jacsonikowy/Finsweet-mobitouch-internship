@@ -7,9 +7,10 @@ import "./Features.scss";
 import { Panels } from "../../../mocks/featuresData";
 
 const renderPanels = () => {
-    return Panels.map((panel) => {
+    return Panels.map((panel, index: number) => {
         return (
             <Panel
+                key={index}
                 className="padding"
                 icon={panel.icon}
                 level="h6"

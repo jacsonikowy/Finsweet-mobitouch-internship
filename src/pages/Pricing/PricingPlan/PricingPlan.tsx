@@ -16,9 +16,10 @@ const PricingPlan: React.FC = () => {
                 description="When you’re ready to go beyond prototyping in Figma, Webflow is ready to help you bring your designs to life — without coding them."
             />
             <div className="pricingplan-cards">
-                {pricingCards.map((pricingCard) => {
+                {pricingCards.map((pricingCard, index: number) => {
                     return (
                         <PricingCard
+                            key={index}
                             price={pricingCard.price}
                             content={pricingCard.content}
                             backgroundColor={pricingCard.backgroundColor}

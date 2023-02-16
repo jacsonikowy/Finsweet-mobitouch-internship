@@ -8,6 +8,7 @@ const renderQuestions = () => {
   return questions.map((question: questionProps, index: number) => {
     return (
       <Question
+        key={index}
         number={"0" + String(index + 1)}
         question={question.question}
         answer="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
