@@ -19,11 +19,12 @@
 
 @media screen and (max-width: $extralarge) {
   .ourDesign {
-    padding: 2em;
+    padding: 16px;
     display: block;
     margin: 0 auto;
     .aboutUsDiv {
       text-align: center;
+      padding: 0;
     }
   }
 }

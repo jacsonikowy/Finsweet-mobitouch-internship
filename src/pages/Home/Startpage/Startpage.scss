@@ -27,10 +27,16 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1400px) {
+  .startpage {
+    max-height: 920px;
+  }
+}
+
+@media screen and (max-width: $extralarge) {
   .startpage {
     position: relative;
-    height: 760px;
+    max-height: 760px;
     &::before {
       content: "";
       width: 100%;

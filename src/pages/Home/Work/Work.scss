@@ -4,6 +4,7 @@
   min-height: 661px;
   background-color: #f4f6fc;
   display: flex;
+  justify-content: space-around;
   padding: 128px 0 128px 165px;
   color: $darkblue;
 }
@@ -26,7 +27,13 @@
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1450px) {
+  .work {
+    padding: 96px;
+  }
+}
+
+@media screen and (max-width: $extralarge) {
   .work {
     display: block;
     padding: 16px;

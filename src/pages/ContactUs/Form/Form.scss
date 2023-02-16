@@ -47,7 +47,6 @@
 
         .message {
             grid-area: message;
-            width: 100%;
         }
 
         }
@@ -60,8 +59,22 @@
 
 @media screen and (max-width: $large) {
     .contactus-formdiv {
+        padding: 16px;
         .contactus-form {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-height: 1250px;
+            .contactus-form-grid {
+                padding: 16px;
+                display: block;
+                p {
+                    textarea {
+                        max-width: 300px;
+                    }
+                }
+            }
         }
     }
 }
