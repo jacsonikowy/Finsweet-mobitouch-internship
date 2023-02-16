@@ -1,7 +1,7 @@
 import React from 'react'
 import './ContactUsForm.scss'
 
-import { Formik, Form, Field } from 'formik'
+import { Formik, Form } from 'formik'
 import * as yup from 'yup'
 
 import Button from '../../../../components/Button/Button'
@@ -33,7 +33,7 @@ const ContactUsForm: React.FC = () => {
         validateOnChange={false}
         validateOnBlur={false}
         >
-        {({errors}) => (
+        {() => (
             <Form className="contactus-form">
                 <div className="contactus-form-grid">
                     <FormikField label="Name" name="name" placeholder="Enter your name" id="name" textarea={false}/>
