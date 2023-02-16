@@ -2,8 +2,8 @@ import React from "react";
 import "./Button.scss";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    text: string;
-    variant:
+  text: string;
+  variant:
     | "primary"
     | "secondary"
     | "arrowPrimary"
@@ -11,21 +11,21 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     | "black"
     | "withoutBackground"
     | "yellow";
-    withArrow?: boolean;
+  withArrow?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
-    text,
-    variant,
-    withArrow,
-    ...props
+  text,
+  variant,
+  withArrow,
+  ...props
 }) => {
-    return (
-        <button {...props} className={`button ${variant} `}>
-            {text}
-            {withArrow ? "→" : ""}
-        </button>
-    );
+  return (
+    <button {...props} className={`button ${variant} `}>
+      {text}
+      {withArrow ? "→" : ""}
+    </button>
+  );
 };
 
 export default Button;

@@ -1,31 +1,31 @@
-import React from 'react'
-import { createElement } from 'react'
+import React from "react";
+import { createElement } from "react";
 
-import Paragraph from './Paragraph/Paragraph'
+import Paragraph from "./Paragraph/Paragraph";
 
-import './TextBlock.scss'
+import "./TextBlock.scss";
 
-type variant = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+type variant = "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 
 export interface TextblockProps {
-    headingText: string,
-    description: string,
-    level: variant,
-    className?: string,
+  headingText: string;
+  description: string;
+  level: variant;
+  className?: string;
 }
 
 const TextBlock: React.FC<TextblockProps> = ({
-    level,
-    headingText,
-    description,
-    className
+  level,
+  headingText,
+  description,
+  className,
 }) => {
-    return createElement(
-        "div",
-        {className: `heading ${className}`},
-        createElement(level, className, headingText),
-        <Paragraph description={description}/>
-    )
-}
+  return createElement(
+    "div",
+    { className: `heading ${className}` },
+    createElement(level, className, headingText),
+    <Paragraph description={description} />
+  );
+};
 
-export default TextBlock
+export default TextBlock;

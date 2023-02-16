@@ -1,18 +1,18 @@
-@import '../../../src/stylesheets/variables';
+@import "../../../src/stylesheets/variables";
 
 .panel {
-    background: #FFFFFF;
-    padding: 58px 32px 48px 48px;
-    margin: 0 32px 24px 0;
-    color: $darkblue;
-    &.panel-textblock {
-        padding: 23px 0 0 0;
-    }
+  background: #ffffff;
+  padding: 58px 32px 48px 48px;
+  margin: 0 32px 24px 0;
+  color: $darkblue;
+  &.panel-textblock {
+    padding: 23px 0 0 0;
+  }
 }
 
 @media screen and (max-width: $extralarge) {
-    .panel {
-        padding: 32px;
-        margin: 0;
-    }
+  .panel {
+    padding: 32px;
+    margin: 0;
+  }
 }

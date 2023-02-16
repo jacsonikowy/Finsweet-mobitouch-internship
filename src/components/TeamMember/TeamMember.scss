@@ -1,11 +1,11 @@
-@import '../../stylesheets/variables';
+@import "../../stylesheets/variables";
 
 .teammember {
-    text-align: center;
+  text-align: center;
 }
 
-@media screen and (max-width: $large){
-    .teammember {
-        margin: 16px 0;
-    }
+@media screen and (max-width: $large) {
+  .teammember {
+    margin: 16px 0;
+  }
 }

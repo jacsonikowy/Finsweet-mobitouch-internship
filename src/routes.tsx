@@ -1,52 +1,50 @@
-import {
-  createBrowserRouter,
-} from 'react-router-dom';
+import { createBrowserRouter } from "react-router-dom";
 
-import Home from './pages/Home/Home'
-import AboutUs from './pages/AboutUs/AboutUs'
-import ErrorPage from './pages/ErrorPage/ErrorPage'
-import Pricing from './pages/Pricing/Pricing'
-import ContactUs from './pages/ContactUs/ContactUs'
+import Home from "./pages/Home/Home";
+import AboutUs from "./pages/AboutUs/AboutUs";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import Pricing from "./pages/Pricing/Pricing";
+import ContactUs from "./pages/ContactUs/ContactUs";
 
 export interface RoutesProps {
-  path: string,
-  element: React.ReactNode,
-  errorElement?: React.ReactNode,
-  name: string,
+  path: string;
+  element: React.ReactNode;
+  errorElement?: React.ReactNode;
+  name: string;
 }
 
 export const routes: RoutesProps[] = [
   {
-    path: '/',
+    path: "/",
     element: <Home />,
     name: "Home",
     errorElement: <ErrorPage />,
   },
   {
-    path: '/about-us',
+    path: "/about-us",
     element: <AboutUs />,
-    name: "About Us"
+    name: "About Us",
   },
   {
-    path: '/features',
+    path: "/features",
     element: <></>,
     name: "Featues",
   },
   {
-    path: '/pricing',
+    path: "/pricing",
     element: <Pricing />,
-    name: "Pricing"
+    name: "Pricing",
   },
   {
-    path: '/faq',
+    path: "/faq",
     element: <></>,
     name: "Blog",
   },
   {
-    path: '/contact-us',
+    path: "/contact-us",
     element: <ContactUs />,
-    name: "Contact Us"
-  }
-]
+    name: "Contact Us",
+  },
+];
 
-export const router = createBrowserRouter(routes)
+export const router = createBrowserRouter(routes);

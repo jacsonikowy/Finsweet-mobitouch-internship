@@ -1,29 +1,29 @@
-@import '../../../stylesheets/variables';
+@import "../../../stylesheets/variables";
 
 .reviews {
-    display: block;
-    padding: 130px 160px;
-    .reviewBlock {
-        display: flex;
-        justify-content: space-between;
-        .textblockOpinion {
-            max-width: 327px;
-            margin: 0 110px 0 0;
-        }
-        .reviewBlock-opinion {
-            padding: 0;
-        }
+  display: block;
+  padding: 130px 160px;
+  .reviewBlock {
+    display: flex;
+    justify-content: space-between;
+    .textblockOpinion {
+      max-width: 327px;
+      margin: 0 110px 0 0;
     }
+    .reviewBlock-opinion {
+      padding: 0;
+    }
+  }
 }
 
 @media screen and (max-width: $extralarge) {
-    .reviews {
-        padding: 16px;
-        .reviewBlock {
-            display: block;
-            .reviewBlock-opinion {
-                padding: 48px 16px 32px 16px;
-            }
-        }
+  .reviews {
+    padding: 16px;
+    .reviewBlock {
+      display: block;
+      .reviewBlock-opinion {
+        padding: 48px 16px 32px 16px;
+      }
     }
+  }
 }

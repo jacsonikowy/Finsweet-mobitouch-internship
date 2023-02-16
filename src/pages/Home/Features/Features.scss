@@ -1,39 +1,36 @@
-@import '../../../stylesheets/variables';
+@import "../../../stylesheets/variables";
 
 .features {
-    padding: 128px 160px;
-    .headings {
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-        max-width: 630px;
-        padding: 0 0 47px 0;
-    }
+  padding: 128px 160px;
+  .headings {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 630px;
+    padding: 0 0 47px 0;
+  }
 }
 
 .panelsGrid {
-    margin-top: 3em;
-    display: grid;
-    grid-template-columns: auto auto auto;
+  margin-top: 3em;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-
 .padding {
-    padding: 2em;
-    width: 25em;
-    height: 19.75em;
+  padding: 2em;
+  width: 25em;
+  height: 19.75em;
 }
 
 @media screen and (max-width: 1400px) {
-    .features {
-        padding: 32px;
-    }
-    .panelsGrid {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-    }
+  .features {
+    padding: 32px;
+  }
+  .panelsGrid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
-

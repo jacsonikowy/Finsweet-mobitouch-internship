@@ -1,23 +1,23 @@
-@import '../../../stylesheets/variables';
+@import "../../../stylesheets/variables";
 
 .pricingplan {
-    padding: 7em;
-    .pricingplan-textblock {
-        text-align: center;
-    }
-    .pricingplan-cards {
-        display: flex;
-        justify-content: space-evenly;
-    }
+  padding: 7em;
+  .pricingplan-textblock {
+    text-align: center;
+  }
+  .pricingplan-cards {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 @media screen and (max-width: 1500px) {
-    .pricingplan {
-        padding: 2em;
-        .pricingplan-cards {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+  .pricingplan {
+    padding: 2em;
+    .pricingplan-cards {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+  }
 }

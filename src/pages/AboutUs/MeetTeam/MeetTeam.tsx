@@ -7,22 +7,22 @@ import "./MeetTeam.scss";
 import { ArrayMembers } from "../../../mocks/teamMembers";
 
 const MeetTeam: React.FC = () => {
-    return (
-        <div className="meetteam">
-            <h2>Meet Our Team</h2>
-            <div className="meetteam-teammembers">
-                {ArrayMembers.map((member) => {
-                    return (
-                        <TeamMember
-                            img={member.img}
-                            name={member.name}
-                            title={member.title}
-                        />
-                    );
-                })}
-            </div>
-        </div>
-    );
+  return (
+    <div className="meetteam">
+      <h2>Meet Our Team</h2>
+      <div className="meetteam-teammembers">
+        {ArrayMembers.map((member) => {
+          return (
+            <TeamMember
+              img={member.img}
+              name={member.name}
+              title={member.title}
+            />
+          );
+        })}
+      </div>
+    </div>
+  );
 };
 
 export default MeetTeam;

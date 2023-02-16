@@ -1,31 +1,31 @@
-@import '../../../stylesheets/variables';
+@import "../../../stylesheets/variables";
 
 .processwefollow {
-    padding: 128px 160px;
-    h2 {
-        text-align: center;
-        margin: 0 0 2em 0;
+  padding: 128px 160px;
+  h2 {
+    text-align: center;
+    margin: 0 0 2em 0;
+  }
+  .processwefollow-panels {
+    display: flex;
+    justify-content: space-evenly;
+    .processwefollow-panel {
+      max-width: 272px;
+      padding: 1em;
     }
-    .processwefollow-panels {
-        display: flex;
-        justify-content: space-evenly;
-        .processwefollow-panel {
-            max-width: 272px;
-            padding: 1em;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: $large) {
-    .processwefollow {
-        .processwefollow-panels {
-            display: block;
-        }
+  .processwefollow {
+    .processwefollow-panels {
+      display: block;
     }
+  }
 }
 
 @media screen and (max-width: $small) {
-    .processwefollow {
-        padding: 2em;
-    }
+  .processwefollow {
+    padding: 2em;
+  }
 }

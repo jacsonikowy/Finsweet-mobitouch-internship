@@ -1,20 +1,20 @@
-@import '../../../../stylesheets/variables';
+@import "../../../../stylesheets/variables";
 
 .formStellar {
-    .form-field {
-        width: 100%;
-        padding: 18px 0 18px 31px;
-        margin: 16px 0 0 0;
-        background: none;
-        border-radius: 8px;
-        border: 1.5px solid rgba(255, 255, 255, 0.05);
-        color: #FFFFFF;
-        &.active {
-            border: 1.5px solid $danger;
-        }
+  .form-field {
+    width: 100%;
+    padding: 18px 0 18px 31px;
+    margin: 16px 0 0 0;
+    background: none;
+    border-radius: 8px;
+    border: 1.5px solid rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    &.active {
+      border: 1.5px solid $danger;
     }
-    .error {
-        font-size: 12px;
-        color: $danger;
-    }
+  }
+  .error {
+    font-size: 12px;
+    color: $danger;
+  }
 }
