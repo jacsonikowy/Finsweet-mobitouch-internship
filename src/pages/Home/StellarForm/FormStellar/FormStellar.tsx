@@ -3,7 +3,7 @@ import Button from '../../../../components/Button/Button'
 import './FormStellar.scss'
 import FormikField from '../../../../components/FormikField/FormikField'
 
-import { Formik, Form, Field } from 'formik'
+import { Formik, Form } from 'formik'
 import * as Yup from 'yup'
 
 const valueSchema = Yup.object({
