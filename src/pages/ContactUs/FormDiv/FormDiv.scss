@@ -1,0 +1,34 @@
+@import "../../../stylesheets/variables";
+
+.contactus-formdiv {
+  padding: 128px 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .contactus-formdiv-textblock {
+    text-align: center;
+    max-width: 562px;
+  }
+}
+
+@media screen and (max-width: $large) {
+  .contactus-formdiv {
+    padding: 16px;
+    .contactus-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-height: 1250px;
+      .contactus-form-grid {
+        padding: 16px;
+        display: block;
+        p {
+          textarea {
+            max-width: 300px;
+          }
+        }
+      }
+    }
+  }
+}
