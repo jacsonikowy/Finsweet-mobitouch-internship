@@ -17,13 +17,11 @@
   display: grid;
   grid-template-columns: auto auto;
   margin: 0 0 0 142px;
-  min-width: 5em;
   .panel {
     background-color: #f4f6fc;
   }
   div {
-    width: 18.9375em;
-    padding: 1em;
+    width: 304px;
   }
 }
 
@@ -44,7 +42,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $medium) {
   .work {
     display: block;
     .panels {

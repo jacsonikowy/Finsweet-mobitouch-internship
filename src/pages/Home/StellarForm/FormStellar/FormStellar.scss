@@ -17,4 +17,20 @@
     font-size: 12px;
     color: $danger;
   }
+  .buttonWrapper {
+    display: flex;
+    margin: 24px 0;
+    flex-direction: column;
+    width: 100%;
+    .submitBtn {
+      width: 100%;
+      font-size: 18px;
+    }
+    .buttonArrow {
+      width: 100%;
+      text-align: center;
+      padding: 12px 0;
+      font-size: 18px;
+    }
+  }
 }

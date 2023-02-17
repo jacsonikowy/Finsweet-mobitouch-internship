@@ -35,34 +35,33 @@ const FormStellar: React.FC = () => {
             id="name"
             name="name"
             placeholder="Your Name"
-            textarea={false}
           />
           <FormikField
             className="body1"
             id="email"
             name="email"
             placeholder="Your Email"
-            textarea={false}
           />
           <FormikField
             className="body1"
             id="figmaURL"
             name="figmaURL"
             placeholder="Paste your Design URL"
-            textarea={false}
           />
-          <Button
-            className="submitBtn"
-            text="Submit an Inquiry"
-            variant="primary"
-          />
-          <Button
-            type="button"
-            className="stellarform-flex-second-buttonArrow"
-            text="Get in touch with us"
-            variant="arrowPrimary"
-            withArrow={true}
-          />
+          <div className="buttonWrapper">
+            <Button
+              className="submitBtn"
+              text="Submit an Inquiry"
+              variant="primary"
+            />
+            <Button
+              type="button"
+              className="buttonArrow"
+              text="Get in touch with us"
+              variant="arrowPrimary"
+              withArrow={true}
+            />
+          </div>
         </Form>
       )}
     </Formik>
