@@ -1,6 +1,8 @@
+@import "../../stylesheets/variables";
+
 .paneldotted {
   position: relative;
-  &:after {
+  &:before {
     position: absolute;
     top: 70px;
     left: 80px;
@@ -8,5 +10,13 @@
     bottom: 0;
     border-top: 1px dotted black;
     content: "";
+  }
+}
+
+@media screen and (max-width: $large) {
+  .paneldotted {
+    &:before {
+      top: 45px;
+    }
   }
 }

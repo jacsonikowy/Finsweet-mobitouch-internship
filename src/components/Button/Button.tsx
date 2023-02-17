@@ -18,10 +18,11 @@ const Button: React.FC<ButtonProps> = ({
   text,
   variant,
   withArrow,
+  className,
   ...props
 }) => {
   return (
-    <button {...props} className={`button ${variant} `}>
+    <button className={`button ${variant} ${className}`}>
       {text}
       {withArrow ? "→" : ""}
     </button>

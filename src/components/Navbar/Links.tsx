@@ -13,7 +13,7 @@ const Links: React.FC<LinkProps> = ({ className }) => {
       {routes.map((route: RoutesProps, index: number) => {
         return (
           <Link key={index} to={route.path}>
-            {route.name}
+            {!route.notRender ? route.name : null}
           </Link>
         );
       })}

@@ -18,7 +18,7 @@ const Panel: React.FC<PanelProps> = ({
 }) => {
   return (
     <div className={`panel ${className}`}>
-      {icon}
+      <div>{icon}</div>
       <TextBlock
         className="panel-textblock"
         headingText={headingText}

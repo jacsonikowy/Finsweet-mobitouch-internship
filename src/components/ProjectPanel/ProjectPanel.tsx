@@ -23,17 +23,25 @@ const ProjectPanel: React.FC<ProjectPanelProps> = ({
       <img className="projectPanel-img" src={image} alt="" />
       <div
         className={`projectPanel-block ${
-          backgroundWidth === "max" ? "max" : "secondary"
+          backgroundWidth === "max" && backgroundActive
+            ? "max"
+            : backgroundActive
+            ? "secondary"
+            : ""
         }`}
       >
         <TextBlock
-          className="projectPanel-block-textblock"
+          className={`projectPanel-block-textblock ${
+            !backgroundActive ? "active" : ""
+          }`}
           level={level}
           headingText={headingText}
           description={description}
         />
         <Button
-          className="projectPanel-block-buttonArrow"
+          className={`projectPanel-block-buttonArrow ${
+            !backgroundActive ? "active" : ""
+          }`}
           variant="yellow"
           text="View project"
           withArrow={true}

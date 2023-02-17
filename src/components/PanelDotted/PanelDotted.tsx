@@ -11,7 +11,6 @@ const PanelDotted: React.FC<PanelProps> = ({
 }) => {
   return (
     <div className="paneldotted">
-      <div className="horizontal-dotted-line"></div>
       <Panel
         headingText={headingText}
         level={level}

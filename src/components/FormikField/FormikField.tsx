@@ -1,13 +1,10 @@
-import React from "react";
+import React, { InputHTMLAttributes } from "react";
 import { useField } from "formik";
 
-interface FormikFieldProps {
+interface FormikFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   name: string;
   label?: string;
   textarea?: boolean;
-  placeholder?: string;
-  id: string;
-  className?: string;
 }
 
 const FormikField: React.FC<FormikFieldProps> = ({
@@ -22,7 +19,7 @@ const FormikField: React.FC<FormikFieldProps> = ({
   return (
     <p className={`${textarea === true ? "message" : null}`}>
       <label htmlFor={name}>{label}</label>
-      {textarea === false ? (
+      {!textarea ? (
         <input
           className={`form-field ${className} ${meta.error ? "active" : ""}`}
           {...field}
