@@ -1,0 +1,36 @@
+@import "../../stylesheets/variables";
+
+p {
+  input {
+    &.primary {
+      max-width: 438px;
+      max-height: 64px;
+      padding: 18px;
+      color: "#000000";
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 8px;
+      &.active {
+        border: 1.5px solid $danger;
+      }
+    }
+    &.secondary {
+      width: 100%;
+      padding: 18px 0 18px 31px;
+      margin: 16px 0 0 0;
+      background: none;
+      border-radius: 8px;
+      border: 1.5px solid rgba(255, 255, 255, 0.05);
+      color: #ffffff;
+      font-size: 16px;
+      &.active {
+        border: 1.5px solid $danger;
+      }
+    }
+  }
+  div {
+    &.error {
+      font-size: 12px;
+      color: $danger;
+    }
+  }
+}

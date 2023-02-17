@@ -1,12 +1,22 @@
+@import "../../stylesheets/variables";
+
 .paneldotted {
-    position: relative;
+  position: relative;
+  &:after {
+    position: absolute;
+    top: 70px;
+    left: 80px;
+    right: 0;
+    bottom: 0;
+    border-top: 1px dotted black;
+    content: "";
+  }
+}
+
+@media screen and (max-width: $extralarge) {
+  .paneldotted {
     &:after {
-        position: absolute;
-        top: 70px;
-        left: 80px;
-        right: 0;
-        bottom: 0;
-        border-top: 1px dotted black;
-        content: '';
+      top: 45px;
     }
+  }
 }

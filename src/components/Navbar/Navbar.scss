@@ -8,6 +8,9 @@ nav {
   align-items: center;
   color: white;
   padding: 60px 160px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   .bars {
     display: none;
   }

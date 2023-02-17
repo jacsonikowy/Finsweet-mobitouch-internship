@@ -29,39 +29,38 @@
     width: 100%;
     text-align: center;
   }
-}
+  &.secondary {
+    color: #f4f6fc;
+    background-color: $darkblue;
+    text-align: center;
+  }
 
-.secondary {
-  color: #f4f6fc;
-  background-color: $darkblue;
-  text-align: center;
-}
+  &.withoutBackground {
+    background: none;
+    text-align: center;
+    color: #ffffff;
+  }
 
-.withoutBackground {
-  background: none;
-  text-align: center;
-  color: #ffffff;
-}
+  &.black {
+    background: $darkblue;
+    color: #ffffff;
+    text-align: center;
+    border: none;
+  }
 
-.black {
-  background: $darkblue;
-  color: #ffffff;
-  text-align: center;
-  border: none;
-}
+  &.arrowPrimary {
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 14px;
+    padding: 2px;
+  }
 
-.arrowPrimary {
-  background: none;
-  color: #ffffff;
-  border: none;
-  font-size: 14px;
-  padding: 2px;
-}
-
-.arrowSecondary {
-  background: none;
-  color: #000000;
-  border: none;
-  font-size: 14px;
-  padding: 2px;
+  &.arrowSecondary {
+    background: none;
+    color: #000000;
+    border: none;
+    font-size: 14px;
+    padding: 2px;
+  }
 }
