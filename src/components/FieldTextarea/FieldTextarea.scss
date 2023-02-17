@@ -1,0 +1,20 @@
+@import "../../stylesheets/variables";
+
+p {
+  textarea {
+    padding: 18px;
+    color: "#000000";
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    max-width: 908px;
+    max-height: 138px;
+    &.active {
+      border: 1.5px solid $danger;
+    }
+    div {
+      &.error {
+        border: 1px solid $danger;
+      }
+    }
+  }
+}
