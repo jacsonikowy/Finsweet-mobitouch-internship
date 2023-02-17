@@ -8,15 +8,19 @@ import ContactUs from "./pages/ContactUs/ContactUs";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
+export interface ElementsProps {
+  path: string;
+  element: React.ReactNode;
+  name: string;
+  notRender?: boolean;
+}
+
 export interface RoutesProps {
   element: React.ReactNode;
   errorElement?: React.ReactNode;
-  path: string;
-  notRender?: boolean;
-  name: string;
+  name?: string;
+  children: ElementsProps[];
 }
-
-/* TODO
 
 const AppLayout = () => {
   return (
@@ -28,14 +32,6 @@ const AppLayout = () => {
   );
 };
 
-interface ElementProps {
-  path: string;
-  element: React.ReactNode;
-  name: string;
-  notRender?: boolean;
-}
-
-/*
 export const routes: RoutesProps[] = [
   {
     element: <AppLayout />,
@@ -73,41 +69,6 @@ export const routes: RoutesProps[] = [
         notRender: true,
       },
     ],
-  },
-];
-*/
-
-export const routes: RoutesProps[] = [
-  {
-    path: "/",
-    element: <Home />,
-    name: "Home",
-  },
-  {
-    path: "/about-us",
-    element: <AboutUs />,
-    name: "About Us",
-  },
-  {
-    path: "/features",
-    element: <ErrorPage />,
-    name: "Featues",
-  },
-  {
-    path: "/pricing",
-    element: <Pricing />,
-    name: "Pricing",
-  },
-  {
-    path: "/faq",
-    element: <ErrorPage />,
-    name: "FAQ",
-  },
-  {
-    path: "/contact-us",
-    element: <ContactUs />,
-    name: "Contact Us",
-    notRender: true,
   },
 ];
 
