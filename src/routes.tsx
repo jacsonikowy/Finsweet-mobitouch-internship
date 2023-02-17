@@ -11,6 +11,7 @@ export interface RoutesProps {
   element: React.ReactNode;
   errorElement?: React.ReactNode;
   name: string;
+  notRender?: boolean;
 }
 
 export const routes: RoutesProps[] = [
@@ -24,26 +25,32 @@ export const routes: RoutesProps[] = [
     path: "/about-us",
     element: <AboutUs />,
     name: "About Us",
+    errorElement: <ErrorPage />,
   },
   {
     path: "/features",
-    element: <></>,
+    element: <ErrorPage />,
     name: "Featues",
+    errorElement: <ErrorPage />,
   },
   {
     path: "/pricing",
     element: <Pricing />,
     name: "Pricing",
+    errorElement: <ErrorPage />,
   },
   {
     path: "/faq",
-    element: <></>,
-    name: "Blog",
+    element: <ErrorPage />,
+    name: "FAQ",
+    errorElement: <ErrorPage />,
   },
   {
     path: "/contact-us",
     element: <ContactUs />,
     name: "Contact Us",
+    errorElement: <ErrorPage />,
+    notRender: true,
   },
 ];
 
