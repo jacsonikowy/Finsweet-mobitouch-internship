@@ -1,11 +1,16 @@
 import "./Navbar.scss";
 
-import { RoutesProps, ElementsProps, routes } from "../../routes";
-import { Link } from "react-router-dom";
+import { RoutesProps, routes } from "../../routes";
+import { NavLink } from "react-router-dom";
 
 interface LinkProps {
   className?: string;
 }
+
+const activeStyle = {
+  color: "#FFFFFF",
+  borderBottom: "2px solid #FFFFFF",
+};
 
 const Links: React.FC<LinkProps> = ({ className }) => {
   return (
@@ -13,9 +18,13 @@ const Links: React.FC<LinkProps> = ({ className }) => {
       {routes.map((route: RoutesProps, index: number) => {
         return route.children.map((element) => {
           return (
-            <Link key={index} to={element.path}>
+            <NavLink
+              key={index}
+              to={element.path}
+              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+            >
               {!element.notRender ? element.name : null}
-            </Link>
+            </NavLink>
           );
         });
       })}
