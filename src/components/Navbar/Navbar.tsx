@@ -28,7 +28,7 @@ const Navbar = () => {
         <h6>{"{Finsweet"}</h6>
       </div>
       <div className={`navlinks ${active ? "active" : ""}`}>
-        <Links className="nav-links" />
+        <Links className="nav-links" onClick={() => setActive(!active)} />
         <Link to="/contact-us">
           <Button variant="withoutBackground" text="Contact Us" />
         </Link>

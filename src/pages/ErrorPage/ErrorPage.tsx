@@ -8,11 +8,13 @@ const ErrorPage: React.FC = () => {
   const error: any = useRouteError();
 
   return (
-    <div className="error1">
+    <>
       <Navbar />
-      <h1>Unexpected Error</h1>
-      <h1>{error.statusText || error.message}</h1>
-    </div>
+      <div className="error1">
+        <h1>Unexpected Error</h1>
+        <h1>{error.statusText || error.message}</h1>
+      </div>
+    </>
   );
 };
 

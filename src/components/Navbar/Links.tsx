@@ -2,9 +2,11 @@ import "./Navbar.scss";
 
 import { RoutesProps, routes } from "../../routes";
 import { NavLink } from "react-router-dom";
+import { MouseEventHandler } from "react";
 
 interface LinkProps {
   className?: string;
+  onClick?: MouseEventHandler;
 }
 
 const activeStyle = {
@@ -12,7 +14,7 @@ const activeStyle = {
   borderBottom: "2px solid #FFFFFF",
 };
 
-const Links: React.FC<LinkProps> = ({ className }) => {
+const Links: React.FC<LinkProps> = ({ className, onClick }) => {
   return (
     <div className={`navlink ${className}`}>
       {routes.map((route: RoutesProps, index: number) => {
@@ -21,7 +23,10 @@ const Links: React.FC<LinkProps> = ({ className }) => {
             <NavLink
               key={index}
               to={element.path}
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              style={({ isActive }) =>
+                isActive && !element.notRender ? activeStyle : undefined
+              }
+              onClick={onClick}
             >
               {!element.notRender ? element.name : null}
             </NavLink>
