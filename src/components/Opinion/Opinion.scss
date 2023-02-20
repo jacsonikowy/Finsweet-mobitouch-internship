@@ -1,54 +1,51 @@
-@import '../../../src/stylesheets/variables';
+@import "../../../src/stylesheets/variables";
 
 .review {
-    max-width: 843px;
-    .description {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 32px 0 0 0;
+  max-width: 843px;
+  .description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 32px 0 0 0;
 
-        img {
-            border-radius: 100%;
-        }
-
-        .opinion {
-            display: flex;
-            flex-direction: column;
-            margin-left: 12px;
-            .review-title {
-                font-size: 12px;
-            }
-        }
+    img {
+      border-radius: 100%;
     }
 
-    .rectangles {
-        display: flex;
-        justify-content: flex-end;
-
-        span {
-            width: 4em;
-            height: 4em;
-            border-radius: 100%;
-        }
-
+    .opinion {
+      display: flex;
+      flex-direction: column;
+      margin-left: 12px;
+      .review-title {
+        font-size: 12px;
+      }
     }
+  }
+
+  .rectangles {
+    display: flex;
+    justify-content: flex-end;
+
+    span {
+      border-radius: 100%;
+    }
+  }
 }
 
 @media screen and (max-width: $medium) {
-    .review {
-        .description {
-            flex-direction: column;
-            justify-content: center;
-            .opinion {
-                margin: 0;
-                justify-content: center;
-                text-align: center;
-            }
-        }
-        .rectangles {
-            justify-content: center;
-            margin: 32px 0 0 0;
-        }
+  .review {
+    .description {
+      flex-direction: column;
+      justify-content: center;
+      .opinion {
+        margin: 0;
+        justify-content: center;
+        text-align: center;
+      }
     }
+    .rectangles {
+      justify-content: center;
+      margin: 32px 0 0 0;
+    }
+  }
 }
