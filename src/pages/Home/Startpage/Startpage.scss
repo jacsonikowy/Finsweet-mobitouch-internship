@@ -9,6 +9,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    .textblock-textblock {
+      max-width: 582px;
+    }
     img {
       min-width: 648px;
     }
@@ -17,13 +20,10 @@
     margin-top: 3em;
   }
   .buttons {
-    padding: 48px 0 0 0;
+    margin: 48px 0 0 80px;
     max-width: 400px;
     display: flex;
     justify-content: space-around;
-    .buttons-button {
-      margin-right: 40px;
-    }
   }
 }
 
@@ -63,6 +63,7 @@
     }
     .buttons {
       position: relative;
+      margin: 0;
     }
   }
 }

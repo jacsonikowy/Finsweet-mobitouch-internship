@@ -41,6 +41,8 @@
       }
     }
     .projectPanel-block-textblock {
+      width: 100%;
+      padding-inline: 12px;
       &.unactive {
         visibility: hidden;
       }
@@ -77,6 +79,10 @@
         rgba(28, 30, 83, 0.42) 103.96%
       );
       .projectPanel-block-textblock {
+        .textblock-paragraph {
+          display: none;
+          align-self: start;
+        }
         &.unactive {
           visibility: visible;
         }
