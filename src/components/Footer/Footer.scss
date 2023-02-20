@@ -25,6 +25,10 @@ footer {
   color: #282938;
   a {
     color: #282938;
+    &:hover {
+      color: $royalblue;
+      transition: color 0.5s ease;
+    }
   }
 }
 
